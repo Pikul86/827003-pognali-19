@@ -1,7 +1,7 @@
-# Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юрий Пикуль](https://up.htmlacademy.ru/adaptive/19/user/827003).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Петров](https://htmlacademy.ru/profile/id617077).
 
 ---
 
