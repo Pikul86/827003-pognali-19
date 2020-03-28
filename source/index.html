@@ -5,8 +5,218 @@
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Логотип Погнали">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"></li>
+            <li class="site-list__item"></li>
+            <li class="site-list__item"></li>
+          </ul>
+        </div>
+      </nav>
+      <h1>В путишествие с крутыми попутчиками</h1>
+      <ul class="main-nav__list user-list">
+        <li class="user-list__item">
+          <a class="user-list__mail" href="mail.html">Телефон</a>
+        </li>
+        <li class="user-list__item">
+          <a class="user-list__phone" href="phone.html">Майл</a>
+        </li>
+        <li class="user-list__item">
+          <a class="user-list__login" href="login.html">Войти</a>
+        </li>
+      </ul>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="page-main">
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы о нас</h2>
+        <div class="reviews__list">
+          <blockquote class="reviews__item">
+            <p class="reviews__text">"Лучшее приложение, что я видел в жизни!</p>
+            <cite class="reviews__author-name">Мурат Эльтазин главный редактор газеты "гаджетлайф"</cite>
+          </blockquote>
+        </div>
+      </section>
+      <section class="facilities">
+        <h2 class="facilities__title visually-hidden">Описание работы приложения</h2>
+        <ul class="facilities__list description-list">
+          <li class="description-list__item">
+            <p>Выберите направление</p>
+            <p>1</p>
+          </li>
+          <li class="description-list__item">
+            <p>Изучите идеи путешественников</p>
+            <p>2</p>
+          </li>
+          <li class="description-list__item">
+            <p>Находите тех, кто похож на вас</p>
+            <p>3</p>
+          </li>
+          <li class="description-list__item">
+            <p>Путешествуйте вместе!</p>
+            <p>4</p>
+          </li>
+        </ul>
+      </section>
+      <Section class="service">
+        <h2>О сервисе</h2>
+        <p>Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в </p>
+        <p>А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+      </Section>
+      <section class="directions">
+        <h2>Направления</h2>
+        <p>Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+        <ul class="directions__list visited-list">
+          <li class="visited-list__item">
+            <img src="https://via.placeholder.com/100x19" width="270" height="110" alt="Достопримечательности Тайланда"> <!--Вставить её фоном потом-->
+            <img src="https://via.placeholder.com/100x19" width="35" height="24" alt="Флаг Тайланда">
+            <ul class="directions__list country-list">
+              <li class="country-list__item">Тайланд</li>
+              <li class="country-list__item country-list__item--logo"></li>
+              <li class="country-list__item">18321</li>
+              <li class="country-list__item">Джунгли зовут!</li>
+            </ul>
+          </li>
+          <li class="visited-list__item">
+            <img src="https://via.placeholder.com/100x19" width="270" height="110" alt="Достопримечательности Франции"> <!--Вставить её фоном потом-->
+            <img src="https://via.placeholder.com/100x19" width="35" height="24" alt="Флаг Франции">
+            <ul class="directions__list country-list">
+              <li class="country-list__item">Франция</li>
+              <li class="country-list__item country-list__item--logo"></li>
+              <li class="country-list__item">12518</li>
+              <li class="country-list__item">Трэ бьен, манифик!</li>
+            </ul>
+          </li>
+          <li class="visited-list__item">
+            <img src="https://via.placeholder.com/100x19" width="270" height="110" alt="Достопримечательности Чехия"> <!--Вставить её фоном потом-->
+            <img src="https://via.placeholder.com/100x19" width="35" height="24" alt="Флаг Чехии">
+            <ul class="directions__list country-list">
+              <li class="country-list__item">Чехия</li>
+              <li class="country-list__item country-list__item--logo"></li>
+              <li class="country-list__item">5326</li>
+              <li class="country-list__item">Закоулки старой Европы</li>
+            </ul>
+          </li>
+        </ul>
+        <button class="directions-button">
+          Показать все
+          <span class="button__icon"></span>
+        </button>
+      </section>
+      <section class="companion">
+        <h2>Попутчики</h2>
+        <p>Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+        <p>Теперь можно легко найти единомышленников!</p>
+        <div class="companion-person">
+          <div class="companion-level"></div> <!--вставить уровень фоном-->
+            <ul class="companion-country__list">
+              <li class="companion-country__item companion-country__item--sri-lanka"><img src="https://via.placeholder.com/100x19" width="35" height="24" alt="Флаг Шри-Ланки"></li>
+              <li class="companion-country__item companion-country__item--thailand"><img src="https://via.placeholder.com/100x19" width="35" height="24" alt="Флаг Тайланда"></li>
+              <li class="companion-country__item companion-country__item--seychelles"><img src="https://via.placeholder.com/100x19" width="35" height="24" alt="Флаг Сейшел"></li>
+            </ul>
+            <div class="companion-name">
+              <p>Таня Фирсова</p> <!--вставить точку псевдоэлеметом до-->
+              <p>#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+              <!--Вставить картинки самолёт, поезд, вело и бег фоном-->
+            </div>
+        </div>
+        <div class="companion-list">
+          <div class="companion-level"></div> <!--вставить уровень фоном-->
+            <ul class="companion-country__list">
+              <li class="companion-country__item companion-country__item--belgium"><img src="https://via.placeholder.com/100x19" width="35" height="24" alt="Флаг Бельгии"></li>
+              <li class="companion-country__item companion-country__item--czech"><img src="https://via.placeholder.com/100x19" width="35" height="24" alt="Флаг Чехии"></li>
+            </ul>
+            <div class="companion-name">
+              <p>Петя Демин</p> <!--вставить точку псевдоэлеметом до-->
+              <p>#бургер #бар #футбол #концерт #крафт</p>
+              <!--Вставить картинки самолёт, поезд, вело и бег фоном-->
+            </div>
+        </div>
+        <button class="directions-button">
+          Показать всех
+          <span class="button__icon"></span>
+        </button>
+      </section>
+      <section class="new">
+        <!--Задать цвет фона(хотя он наверно будет общий для страницы-->
+        <!--Разместить картинку с рублем фоном-->
+        <h2>Добавьте свой профиль</h2>
+        <ul class="new__list">
+          <li class="new__item">Базовое размещение Бесплатно</li> <!--вставить цифру 1 в кружочке фоном-->
+          <li class="new__item">Вывод на первых позициях 99 руб./мес</li> <!--вставить цифру 2 в кружочке фоном-->
+          <li class="new__item">Кастомный цвет карточки 59 руб./мес</li> <!--вставить цифру 3 в кружочке фоном-->
+        </ul>
+        <p>Показать тарифы для бизнеса</p>
+      </section>
+      <section class="interested">
+        <h2>Заинтересовались?</h2>
+        <p>Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <span class="colortext">авторизуйтесь</span>.</p> <!--выделить цветом и подчёркивание-->
+        <div class="interested-mail">
+          <input type="mail" placeholder="E-mail">
+          <button class="interested-button">
+            <span class="button__icon"></span>
+          </button>
+        </div>
+        <p>Остались вопросы? Мы с радостью на них ответим!</p>
+        <a href="tel:+78005558628">
+          <span class="visually-hidden">ссылка на телефон</span>     <!--Добавить картинку телефона фоном-->
+          Тел: 8 800 555-86-28
+        </a>
+        <a href="mailto:mail@example.com">
+          <span class="visually-hidden">ссылка на емаил</span>      <!--Добавить картинку письма фоном-->
+          mail@htmlacademy.ru
+        </a>
+      </section>
+      <section class="adress">
+        <p>ул. Большая Конюшенная, 19/8</p> <!--Вставить метку на адрес фоном-->
+        <button class="adress-button">
+          <span class="button__icon"></span>
+        </button>
+      </section>
+      <div class="map"></div>
+    </main>
+    <footer class="page-footer">
+      <h2>Погнали?</h2>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   </body>
 </html>
