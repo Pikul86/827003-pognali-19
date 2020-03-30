@@ -1,332 +1,399 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Логотип Погнали">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"></li>
-            <li class="site-list__item"></li>
-            <li class="site-list__item"></li>
-          </ul>
-        </div>
-      </nav>
-      <h1 class="form-active">Попутчики</h1>
-      <div class="underline"></div>
-    </header>
-    <div class="filter-country">
-      <!--Вставить картинку фоном которая рядом с надписью Фильтр-->
-      <h2>Фильтрация по странам</h2>
-      <input type="checkbox" class="visually-hidden filter-input"> <!--Вставить картинку с 3-мя точками и сделать её замену потом на крестик-->
-      <div class="modal-filter">
-        <ul class="modal-filter__list">
-          <li class="modal__list modal__list--active">Европа</li>
-          <li class="modal__list">Азия</li>
-          <li class="modal__list">Америка</li>
-          <li class="modal__list">Острова</li>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Логотип Погнали">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"></li>
+          <li class="site-list__item"></li>
+          <li class="site-list__item"></li>
         </ul>
-        <table class="alphabet">
-          <tr><td>А</td><td>Б</td><td>В</td><td>Г</td><td>Д</td></tr>
-          <tr><td>Е</td><td>З</td><td>И</td><td>К</td><td>Л</td></tr>
-          <tr><td>М</td><td>Н</td><td>О</td><td>П</td><td>Р</td></tr>
-          <tr><td>С</td><td>Т</td><td>У</td><td>Ф</td><td>Х</td></tr>
-          <tr><td>Ч</td><td>Ш</td><td>Э</td><td>Ю</td><td>Я</td></tr>
-        </table>
-        <ul class="alphabet__list">
-          <li class="a-list">Австралия</li>
-          <li class="a-list">Австрия</li>
-          <li class="a-list">Азербайджан</li>
-          <li class="a-list">Албания</li>
-          <li class="a-list">Алжир</li>
-          <li class="a-list">Ангола</li>
-          <li class="a-list">Андорра</li>
-          <li class="a-list">Антигуа и Барбуда</li>
-          <li class="a-list">Аргентина</li>
-          <li class="a-list">Армения</li>
-          <li class="a-list">Афганистан</li>
-        </ul>
-        <button class="close">Свернуть</button>  <!--Добавить крестик закрытия фоном-->
       </div>
+    </nav>
+    <h1 class="form-active">Попутчики</h1>
+    <div class="underline"></div>
+  </header>
+  <div class="filter-country">
+    <!--Вставить картинку фоном которая рядом с надписью Фильтр-->
+    <h2>Фильтрация по странам</h2>
+    <input type="checkbox" class="visually-hidden filter-input">
+    <!--Вставить картинку с 3-мя точками и сделать её замену потом на крестик-->
+    <div class="modal-filter">
+      <ul class="modal-filter__list">
+        <li class="modal__list modal__list--active">Европа</li>
+        <li class="modal__list">Азия</li>
+        <li class="modal__list">Америка</li>
+        <li class="modal__list">Острова</li>
+      </ul>
+      <table class="alphabet">
+        <tr>
+          <td>А</td>
+          <td>Б</td>
+          <td>В</td>
+          <td>Г</td>
+          <td>Д</td>
+        </tr>
+        <tr>
+          <td>Е</td>
+          <td>З</td>
+          <td>И</td>
+          <td>К</td>
+          <td>Л</td>
+        </tr>
+        <tr>
+          <td>М</td>
+          <td>Н</td>
+          <td>О</td>
+          <td>П</td>
+          <td>Р</td>
+        </tr>
+        <tr>
+          <td>С</td>
+          <td>Т</td>
+          <td>У</td>
+          <td>Ф</td>
+          <td>Х</td>
+        </tr>
+        <tr>
+          <td>Ч</td>
+          <td>Ш</td>
+          <td>Э</td>
+          <td>Ю</td>
+          <td>Я</td>
+        </tr>
+      </table>
+      <ul class="alphabet__list">
+        <li class="a-list">Австралия</li>
+        <li class="a-list">Австрия</li>
+        <li class="a-list">Азербайджан</li>
+        <li class="a-list">Албания</li>
+        <li class="a-list">Алжир</li>
+        <li class="a-list">Ангола</li>
+        <li class="a-list">Андорра</li>
+        <li class="a-list">Антигуа и Барбуда</li>
+        <li class="a-list">Аргентина</li>
+        <li class="a-list">Армения</li>
+        <li class="a-list">Афганистан</li>
+      </ul>
+      <button class="close">Свернуть</button>
+      <!--Добавить крестик закрытия фоном-->
     </div>
-    <form class="best-companion" method="get" action="https://echo.htmlacademy.ru">
-      <h2>Подберите идеального попутчика</h2>
-      <ul class="best-companion__list">
-        <li class="companion__list">
-          <p>Хобби</p>
-          <img src="" alt=""> <!--вставить стрелку которая будет разворачивать список-->
-        </li>
-        <li class="companion__list">
-            <p>Музыка</p>
-            <img src="" alt=""> <!--вставить стрелку которая будет разворачивать список-->
-            <ul class="modal-companion__list">
-              <li>
-                <input type="checkbox" name="rock" id="rock">
-                <label for="rock">Тяжелый рок</label>
-              </li>
-              <li>
-                <input type="checkbox" name="rap" id="rap">
-                <label for="rap">Русский рэп</label>
-              </li>
-              <li>
-                <input type="checkbox" name="dance" id="dance">
-                <label for="dance">Евроденс</label>
-              </li>
-            </ul>
-        </li>
-        <li class="companion__list">
-          <p>Еда</p>
-          <img src="" alt=""> <!--вставить стрелку которая будет разворачивать список-->
-        </li>
-        <li class="companion__list">
-          <p>Транспорт</p>
-          <img src="" alt=""> <!--вставить стрелку которая будет разворачивать список-->
-          <ul>
-            <li>
-              <button type="button">картинка самолёта</button>
-            </li>
-            <li>
-              <button type="button">картинка поезда</button>
-            </li>
-            <li>
-              <button type="button">картинка велосипеда</button>
-            </li>
-            <li>
-              <button type="button">картинка бегом</button>
-            </li>
-          </ul>
-        </li>
-        <li class="companion__list">
-          <p>Левел</p>
-          <img src="" alt=""> <!--вставить стрелку которая будет разворачивать список-->
-          <div class="modal-level">
-            <div class="level-controls">  <!--Сделать 2 псевдоэлемента чёрточки сверху и снизу в центре выбора уровня-->
-              <label class="min-level"><input type="text" name="min-level" value="30"></label>
-              <label class="max-level"><input type="text" name="max-level" value="100"></label>
-              <div class="vertical-line"></div>
-            </div>
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
-              </div>
-              <div class="range-toggle range-toggle-min"></div>
-              <div class="range-toggle range-toggle-max"></div>
-            </div>
+  </div>
+  <form class="best-companion" method="get" action="https://echo.htmlacademy.ru">
+    <h2>Подберите идеального попутчика</h2>
+    <ul class="best-companion__list">
+      <li class="companion__list">
+        <p>Хобби</p>
+        <img src="" alt="">
+        <!--вставить стрелку которая будет разворачивать список-->
+      </li>
+      <li class="companion__list">
+        <p>Музыка</p>
+        <img src="" alt="">
+        <!--вставить стрелку которая будет разворачивать список-->
+        <ul class="modal-companion__list">
+          <li>
+            <input type="checkbox" name="rock" id="rock">
+            <label for="rock">Тяжелый рок</label>
+          </li>
+          <li>
+            <input type="checkbox" name="rap" id="rap">
+            <label for="rap">Русский рэп</label>
+          </li>
+          <li>
+            <input type="checkbox" name="dance" id="dance">
+            <label for="dance">Евроденс</label>
+          </li>
+        </ul>
+      </li>
+      <li class="companion__list">
+        <p>Еда</p>
+        <img src="" alt="">
+        <!--вставить стрелку которая будет разворачивать список-->
+      </li>
+      <li class="companion__list">
+        <p>Транспорт</p>
+        <img src="" alt="">
+        <!--вставить стрелку которая будет разворачивать список-->
+        <ul>
+          <li>
+            <button type="button">картинка самолёта</button>
+          </li>
+          <li>
+            <button type="button">картинка поезда</button>
+          </li>
+          <li>
+            <button type="button">картинка велосипеда</button>
+          </li>
+          <li>
+            <button type="button">картинка бегом</button>
+          </li>
+        </ul>
+      </li>
+      <li class="companion__list">
+        <p>Левел</p>
+        <img src="" alt="">
+        <!--вставить стрелку которая будет разворачивать список-->
+        <div class="modal-level">
+          <div class="level-controls">
+            <!--Сделать 2 псевдоэлемента чёрточки сверху и снизу в центре выбора уровня-->
+            <label class="min-level"><input type="text" name="min-level" value="30"></label>
+            <label class="max-level"><input type="text" name="max-level" value="100"></label>
+            <div class="vertical-line"></div>
           </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <button type="submit" class="best-companion-button">Показать</button>
+  </form>
+
+  <section class="candidate">
+    <img src="" alt="">
+    <!--фото аватарки-->
+    <img src="" alt="">
+    <!--фото середчка-->
+    <p>Таня Фирсова</p>
+    <p>1.5M</p>
+    <!--кружок активности пользователя, вставить или фоном. Или сделать отдельным div-->
+    <p>#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+    <fieldset class="candidate-country">
+      <legend>хочет посетить:</legend>
+      <ul class="candidate__list">
+        <li class="candidate-country__list country__list--sri-lanka">Шри-Ланка</li>
+        <li class="candidate-country__list country__list--thailand">Таиланд</li>
+        <li class="candidate-country__list country__list--seychelles">Сейшелы</li>
+      </ul>
+    </fieldset>
+    <div class="middle-line"></div>
+    <div class="transport-level-blog">
+      <fieldset class="candidate-transport">
+        <legend>транспорт:</legend>
+        <ul>
+          <li>
+            <img src="" alt="">
+            <!--вставляем картинку самолёта в svg-->
+          </li>
+          <li>
+            <img src="" alt="">
+            <!--вставляем картинку поезад в svg-->
+          </li>
+          <li>
+            <img src="" alt="">
+            <!--вставляем картинку в svg-->
+          </li>
+          <li>
+            <img src="" alt="">
+            <!--вставляем картинку в svg-->
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="candidate-level">
+        <legend>левел:</legend>
+        <div class="level-points points--ninety-nine">
+          <p>99</p>
+        </div>
+        <!--Вставить фоном картинки уровня-->
+      </fieldset>
+    </div>
+    <button class="candidate-button">позвать!</button>
+  </section>
+  <section class="candidate">
+    <img src="" alt="">
+    <!--фото аватарки-->
+    <img src="" alt="">
+    <!--фото середчка-->
+    <p>Петя Демин</p>
+    <p>1500</p>
+    <!--кружок активности пользователя, вставить или фоном. Или сделать отдельным div-->
+    <p>#бургер #бар #футбол #концерт #крафт</p>
+    <fieldset class="candidate-country">
+      <legend>хочет посетить:</legend>
+      <ul class="candidate__list">
+        <li class="candidate-country__list country__list--belgium">Бельгия</li>
+        <li class="candidate-country__list country__list--czech">Чехия</li>
+      </ul>
+    </fieldset>
+    <div class="middle-line"></div>
+    <div class="transport-level-blog">
+      <fieldset class="candidate-transport">
+        <legend>транспорт:</legend>
+        <ul>
+          <li>
+            <img src="" alt="">
+            <!--вставляем картинку самолёта в svg-->
+          </li>
+          <li>
+            <img src="" alt="">
+            <!--вставляем картинку поезад в svg-->
+          </li>
+          <li>
+            <img src="" alt="">
+            <!--вставляем картинку в svg-->
+          </li>
+          <li>
+            <img src="" alt="">
+            <!--вставляем картинку в svg-->
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="candidate-level">
+        <legend>левел:</legend>
+        <div class="level-points points--eighty">
+          <p>80</p>
+        </div>
+        <!--Вставить фоном картинки уровня-->
+      </fieldset>
+    </div>
+    <button class="candidate-button">позвать!</button>
+  </section>
+  <section class="candidate">
+    <img src="" alt="">
+    <!--фото аватарки-->
+    <img src="" alt="">
+    <!--фото середчка-->
+    <p>Марк Смолов</p>
+    <p>170</p>
+    <!--кружок активности пользователя, вставить или фоном. Или сделать отдельным div-->
+    <p>#рэп #тату #хайпбист #кроссовки #суприм</p>
+    <fieldset class="candidate-country">
+      <legend>хочет посетить:</legend>
+      <ul class="candidate__list">
+        <li class="candidate-country__list country__list--usa">США</li>
+        <li class="candidate-country__list country__list--australia">Австралия</li>
+        <li class="candidate-country__list country__list--dominica">Доминика</li>
+      </ul>
+    </fieldset>
+    <div class="middle-line"></div>
+    <div class="transport-level-blog">
+      <fieldset class="candidate-transport">
+        <legend>транспорт:</legend>
+        <ul>
+          <li>
+            <img src="" alt="">
+            <!--вставляем картинку самолёта в svg-->
+          </li>
+          <li>
+            <img src="" alt="">
+            <!--вставляем картинку поезад в svg-->
+          </li>
+          <li>
+            <img src="" alt="">
+            <!--вставляем картинку в svg-->
+          </li>
+          <li>
+            <img src="" alt="">
+            <!--вставляем картинку в svg-->
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="candidate-level">
+        <legend>левел:</legend>
+        <div class="level-points points--twenty-five">
+          <p>25</p>
+        </div>
+        <!--Вставить фоном картинки уровня-->
+      </fieldset>
+    </div>
+    <button class="candidate-button">позвать!</button>
+  </section>
+  <section class="candidate">
+    <img src="" alt="">
+    <!--фото аватарки-->
+    <img src="" alt="">
+    <!--фото середчка-->
+    <p>Лариса Роговая</p>
+    <p>23</p>
+    <!--кружок активности пользователя, вставить или фоном. Или сделать отдельным div-->
+    <p>#образование #карьера #учеба #линкедин</p>
+    <fieldset class="candidate-country">
+      <legend>хочет посетить:</legend>
+      <ul class="candidate__list">
+        <li class="candidate-country__list country__list--united-kingdom">Великобритания</li>
+        <li class="candidate-country__list country__list--germany">Германия</li>
+      </ul>
+    </fieldset>
+    <div class="middle-line"></div>
+    <div class="transport-level-blog">
+      <fieldset class="candidate-transport">
+        <legend>транспорт:</legend>
+        <ul>
+          <li>
+            <img src="" alt="">
+            <!--вставляем картинку самолёта в svg-->
+          </li>
+          <li>
+            <img src="" alt="">
+            <!--вставляем картинку поезад в svg-->
+          </li>
+          <li>
+            <img src="" alt="">
+            <!--вставляем картинку в svg-->
+          </li>
+          <li>
+            <img src="" alt="">
+            <!--вставляем картинку в svg-->
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="candidate-level">
+        <legend>левел:</legend>
+        <div class="level-points points--fifty">
+          <p>50</p>
+        </div>
+        <!--Вставить фоном картинки уровня-->
+      </fieldset>
+    </div>
+    <button class="candidate-button">позвать!</button>
+  </section>
+  <p>Показать еще</p>
+  <!--Вставить плюс псевдоэлементом до-->
+  <div class="next-back-candidate">
+    <button class="candidate-button-next">
+      <!-- svg стрелки-->
+    </button>
+    <button class="candidate-button-back">
+      <!-- svg стрелки-->
+    </button>
+  </div>
+  <footer class="page-footer">
+    <h2>Погнали?</h2>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+            Инстаграме</a>
         </li>
       </ul>
-      <button type="submit" class="best-companion-button">Показать</button>
-    </form>
-
-    <section class="candidate">
-      <img src="" alt=""> <!--фото аватарки-->
-      <img src="" alt="">  <!--фото середчка-->
-      <p>Таня Фирсова</p>
-      <p>1.5M</p>
-      <!--кружок активности пользователя, вставить или фоном. Или сделать отдельным div-->
-      <p>#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-      <fieldset class="candidate-country">
-        <legend>хочет посетить:</legend>
-        <ul class="candidate__list">
-          <li class="candidate-country__list country__list--sri-lanka">Шри-Ланка</li>
-          <li class="candidate-country__list country__list--thailand">Таиланд</li>
-          <li class="candidate-country__list country__list--seychelles">Сейшелы</li>
-        </ul>
-      </fieldset>
-      <div class="middle-line"></div>
-      <div class="transport-level-blog">
-        <fieldset class="candidate-transport">
-          <legend>транспорт:</legend>
-          <ul>
-            <li>
-              <img src="" alt=""> <!--вставляем картинку самолёта в svg-->
-            </li>
-            <li>
-              <img src="" alt=""> <!--вставляем картинку поезад в svg-->
-            </li>
-            <li>
-              <img src="" alt=""> <!--вставляем картинку в svg-->
-            </li>
-            <li>
-              <img src="" alt=""> <!--вставляем картинку в svg-->
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="candidate-level">
-          <legend>левел:</legend>
-          <div class="level-points points--ninety-nine">
-            <p>99</p>
-          </div>
-          <!--Вставить фоном картинки уровня-->
-        </fieldset>
-      </div>
-      <button class="candidate-button">позвать!</button>
-    </section>
-    <section class="candidate">
-      <img src="" alt=""> <!--фото аватарки-->
-      <img src="" alt="">  <!--фото середчка-->
-      <p>Петя Демин</p>
-      <p>1500</p>
-      <!--кружок активности пользователя, вставить или фоном. Или сделать отдельным div-->
-      <p>#бургер #бар #футбол #концерт #крафт</p>
-      <fieldset class="candidate-country">
-        <legend>хочет посетить:</legend>
-        <ul class="candidate__list">
-          <li class="candidate-country__list country__list--belgium">Бельгия</li>
-          <li class="candidate-country__list country__list--czech">Чехия</li>
-        </ul>
-      </fieldset>
-      <div class="middle-line"></div>
-      <div class="transport-level-blog">
-        <fieldset class="candidate-transport">
-          <legend>транспорт:</legend>
-         <ul>
-           <li>
-             <img src="" alt=""> <!--вставляем картинку самолёта в svg-->
-           </li>
-           <li>
-             <img src="" alt=""> <!--вставляем картинку поезад в svg-->
-           </li>
-           <li>
-             <img src="" alt=""> <!--вставляем картинку в svg-->
-           </li>
-           <li>
-             <img src="" alt=""> <!--вставляем картинку в svg-->
-           </li>
-         </ul>
-        </fieldset>
-        <fieldset class="candidate-level">
-          <legend>левел:</legend>
-          <div class="level-points points--eighty">
-            <p>80</p>
-          </div>
-          <!--Вставить фоном картинки уровня-->
-        </fieldset>
-      </div>
-      <button class="candidate-button">позвать!</button>
-    </section>
-    <section class="candidate">
-      <img src="" alt=""> <!--фото аватарки-->
-      <img src="" alt="">  <!--фото середчка-->
-      <p>Марк Смолов</p>
-      <p>170</p>
-      <!--кружок активности пользователя, вставить или фоном. Или сделать отдельным div-->
-      <p>#рэп #тату #хайпбист #кроссовки #суприм</p>
-      <fieldset class="candidate-country">
-        <legend>хочет посетить:</legend>
-        <ul class="candidate__list">
-          <li class="candidate-country__list country__list--usa">США</li>
-          <li class="candidate-country__list country__list--australia">Австралия</li>
-          <li class="candidate-country__list country__list--dominica">Доминика</li>
-        </ul>
-      </fieldset>
-      <div class="middle-line"></div>
-      <div class="transport-level-blog">
-        <fieldset class="candidate-transport">
-          <legend>транспорт:</legend>
-         <ul>
-           <li>
-             <img src="" alt=""> <!--вставляем картинку самолёта в svg-->
-           </li>
-           <li>
-             <img src="" alt=""> <!--вставляем картинку поезад в svg-->
-           </li>
-           <li>
-             <img src="" alt=""> <!--вставляем картинку в svg-->
-           </li>
-           <li>
-             <img src="" alt=""> <!--вставляем картинку в svg-->
-           </li>
-         </ul>
-        </fieldset>
-        <fieldset class="candidate-level">
-          <legend>левел:</legend>
-          <div class="level-points points--twenty-five">
-            <p>25</p>
-          </div>
-          <!--Вставить фоном картинки уровня-->
-        </fieldset>
-      </div>
-      <button class="candidate-button">позвать!</button>
-    </section>
-    <section class="candidate">
-      <img src="" alt=""> <!--фото аватарки-->
-      <img src="" alt="">  <!--фото середчка-->
-      <p>Лариса Роговая</p>
-      <p>23</p>
-      <!--кружок активности пользователя, вставить или фоном. Или сделать отдельным div-->
-      <p>#образование #карьера #учеба #линкедин</p>
-      <fieldset class="candidate-country">
-        <legend>хочет посетить:</legend>
-        <ul class="candidate__list">
-          <li class="candidate-country__list country__list--united-kingdom">Великобритания</li>
-          <li class="candidate-country__list country__list--germany">Германия</li>
-        </ul>
-      </fieldset>
-      <div class="middle-line"></div>
-      <div class="transport-level-blog">
-        <fieldset class="candidate-transport">
-          <legend>транспорт:</legend>
-         <ul>
-           <li>
-             <img src="" alt=""> <!--вставляем картинку самолёта в svg-->
-           </li>
-           <li>
-             <img src="" alt=""> <!--вставляем картинку поезад в svg-->
-           </li>
-           <li>
-             <img src="" alt=""> <!--вставляем картинку в svg-->
-           </li>
-           <li>
-             <img src="" alt=""> <!--вставляем картинку в svg-->
-           </li>
-         </ul>
-        </fieldset>
-        <fieldset class="candidate-level">
-          <legend>левел:</legend>
-          <div class="level-points points--fifty">
-            <p>50</p>
-          </div>
-          <!--Вставить фоном картинки уровня-->
-        </fieldset>
-      </div>
-      <button class="candidate-button">позвать!</button>
-    </section>
-    <p>Показать еще</p> <!--Вставить плюс псевдоэлементом до-->
-    <div class="next-back-candidate">
-      <button class="candidate-button-next">
-        <!-- svg стрелки-->
-      </button>
-      <button class="candidate-button-back">
-        <!-- svg стрелки-->
-      </button>
     </div>
-    <footer class="page-footer">
-      <h2>Погнали?</h2>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
-    </footer>
-  </body>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </footer>
+</body>
+
 </html>
