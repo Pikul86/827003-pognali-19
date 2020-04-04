@@ -6,10 +6,11 @@
   <title>HTML Academy: Погнали</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
   <div class="container-body">
-  <header class="page-header-form">
-    <svg class="page-header__svg" width="25" height="11" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+    <header class="page-header-form">
+      <svg class="page-header__svg" width="25" height="11" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 11"
         style="enable-background: 0 0 25 11;" xml:space="preserve">
         <g>
@@ -18,203 +19,206 @@
             d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z" />
         </g>
       </svg>
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <h1 class="form-active">Направления</h1>
-  </header>
-  <main class="page-main-form">
-    <div class="companion-level--eighty">
-      <p>80</p>
-      <p>level</p>
-    </div>
-    <div class="mobile-avatar"></div>
-    <button class="photo-button">Сменить фото</button>
-    <fieldset class="tags">
-      <legend>Тэги</legend>
-      <textarea>#бургер #бар #футбол #концерт #крафт</textarea>
-    </fieldset>
-    <fieldset class="transport">
-      <legend>Транспорт</legend>
-      <!--Вставить фоном и спозиционировать картинки самолет, поезд, вело и бег-->
-    </fieldset>
-    <section class="plans">
-      <h2 class="plans__title">Мои планы</h2>
-      <ol class="plans__list">
-        <li class="plans__items">
-          <p>1. Франция, Италия</p>
-          <input type="text" value="3 попутчика">
-          <input type="text">
-          <div class="line"></div>
-          <input type="text" value="">
-          <p>Изменить</p>
-        </li>
-        <li class="plans__items">
-          <p>2. Тайланд, Индонезия</p>
-          <input type="text"> попутчик
-          <input type="text">
-          <div class="line"></div>
-          <input type="text" value="">
-          <p>Изменить</p>
-        </li>
-      </ol>
-    </section>
-    <section class="new-plans">
-      <h2 class="new-plans__title">Добавить план:</h2>
-      <div class="step-one">
-        <h2 class="step-one__title">Шаг 1.</h2>
-        <p class="step-one__title">Даты пребывания</p>
-        <p class="step-one__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую
-          длительность.</p>
-        <label class="step-one__label">Ищу попутчиков:</label>
-        <input type="text" value="2">
-        <button class="minus"></button>
-        <button class="plus"></button>
-        <label class="step-one__label--two">длительность:</label>
-        <input type="text" value="2">
-        <button class="minus"></button>
-        <button class="plus"></button>
-        <input type="checkbox" class="visually-hidden kids" name="kids" id="kids-field" checked>
-        <label for="kids-field">Можно с детьми</label>
-        <input type="text" value="Март 2019">
-        <button class="back"></button>
-        <button class="next"></button>
-        <table class="calendar">
-          <tr>
-            <th>П</th>
-            <th>В</th>
-            <th>С</th>
-            <th>Ч</th>
-            <th>П</th>
-            <th class="holiday">С</th>
-            <th class="holiday">В</th>
-          </tr>
-          <tr>
-            <td>23</td>
-            <td>24</td>
-            <td>25</td>
-            <td>26</td>
-            <td>27</td>
-            <td>28</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>10</td>
-            <td>11</td>
-            <td>12</td>
-            <td>13</td>
-            <td>14</td>
-            <td>15</td>
-          </tr>
-          <tr>
-            <td>16</td>
-            <td>17</td>
-            <td>18</td>
-            <td>19</td>
-            <td>20</td>
-            <td>21</td>
-            <td>22</td>
-          </tr>
-          <tr>
-            <td>23</td>
-            <td>24</td>
-            <td>25</td>
-            <td>26</td>
-            <td>27</td>
-            <td>28</td>
-            <td>29</td>
-          </tr>
-          <tr>
-            <td>30</td>
-            <td>31</td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-          </tr>
-        </table>
-        <button class="next-step">следующий шаг</button>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <h1 class="form-active">Направления</h1>
+    </header>
+    <main class="page-main-form">
+      <div class="companion-level--eighty">
+        <p>80</p>
+        <p>level</p>
       </div>
-      <div class="step-two">
-        <h2 class="step-one__title">Шаг 2.</h2>
-        <p class="step-one__title">Маршрут</p>
-        <p class="step-one__text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько</p>
-        <input name="countries" list="countries" value="Босния и Герцеговина">
-        <button class="down"></button>
-        <div class="circle circle--bosnia"></div>
-        <div class="flag-step--bosnia"></div>
-        <div class="close"></div>
-        <!--Вставить стрелку фоном и спозиционировать-->
-        <input name="countries" list="countries" value="Чехия">
-        <button class="down"></button>
-        <div class="circle circle--czech"></div>
-        <div class="flag-step--czech"></div>
-        <div class="close"></div>
-        <!--Вставить стрелку фоном и спозиционировать-->
-        <input name="countries" list="countries" value="Выберите страну">
-        <button class="down"></button>
-        <div class="circle circle--no-countri"></div>
-        <div class="close"></div>
-        <!--Вставить стрелку фоном и спозиционировать-->
-        <input name="countries" list="countries" value="Добавить страну">
-        <button class=""></button>
-        <div class="circle circle--no-countri"></div>
-        <button class="step-two-plus"></button>
-        <button class="next-step">следующий шаг</button>
-        <a href="#">На шаг назад</a>
+      <div class="mobile-avatar"></div>
+      <button class="photo-button">Сменить фото</button>
+      <fieldset class="tags">
+        <legend>Тэги</legend>
+        <textarea>#бургер #бар #футбол #концерт #крафт</textarea>
+      </fieldset>
+      <fieldset class="transport">
+        <legend>Транспорт</legend>
+        <!--Вставить фоном и спозиционировать картинки самолет, поезд, вело и бег-->
+      </fieldset>
+      <section class="plans">
+        <h2 class="plans__title">Мои планы</h2>
+        <ol class="plans__list">
+          <li class="plans__items">
+            <p>1. Франция, Италия</p>
+            <input type="text" value="3 попутчика">
+            <input type="text">
+            <div class="line"></div>
+            <input type="text" value="">
+            <p>Изменить</p>
+          </li>
+          <li class="plans__items">
+            <p>2. Тайланд, Индонезия</p>
+            <input type="text"> попутчик
+            <input type="text">
+            <div class="line"></div>
+            <input type="text" value="">
+            <p>Изменить</p>
+          </li>
+        </ol>
+      </section>
+      <section class="new-plans">
+        <h2 class="new-plans__title">Добавить план:</h2>
+        <div class="step-one">
+          <h2 class="step-one__title">Шаг 1.</h2>
+          <p class="step-one__title">Даты пребывания</p>
+          <p class="step-one__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в
+            поездку и ее предполагаемую
+            длительность.</p>
+          <label class="step-one__label">Ищу попутчиков:</label>
+          <input type="text" value="2">
+          <button class="minus"></button>
+          <button class="plus"></button>
+          <label class="step-one__label--two">длительность:</label>
+          <input type="text" value="2">
+          <button class="minus"></button>
+          <button class="plus"></button>
+          <input type="checkbox" class="visually-hidden kids" name="kids" id="kids-field" checked>
+          <label for="kids-field">Можно с детьми</label>
+          <input type="text" value="Март 2019">
+          <button class="back"></button>
+          <button class="next"></button>
+          <table class="calendar">
+            <tr>
+              <th>П</th>
+              <th>В</th>
+              <th>С</th>
+              <th>Ч</th>
+              <th>П</th>
+              <th class="holiday">С</th>
+              <th class="holiday">В</th>
+            </tr>
+            <tr>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+              <td>22</td>
+            </tr>
+            <tr>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+              <td>29</td>
+            </tr>
+            <tr>
+              <td>30</td>
+              <td>31</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+          </table>
+          <button class="next-step">следующий шаг</button>
+        </div>
+        <div class="step-two">
+          <h2 class="step-one__title">Шаг 2.</h2>
+          <p class="step-one__title">Маршрут</p>
+          <p class="step-one__text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько
+          </p>
+          <input name="countries" list="countries" value="Босния и Герцеговина">
+          <button class="down"></button>
+          <div class="circle circle--bosnia"></div>
+          <div class="flag-step--bosnia"></div>
+          <div class="close"></div>
+          <!--Вставить стрелку фоном и спозиционировать-->
+          <input name="countries" list="countries" value="Чехия">
+          <button class="down"></button>
+          <div class="circle circle--czech"></div>
+          <div class="flag-step--czech"></div>
+          <div class="close"></div>
+          <!--Вставить стрелку фоном и спозиционировать-->
+          <input name="countries" list="countries" value="Выберите страну">
+          <button class="down"></button>
+          <div class="circle circle--no-countri"></div>
+          <div class="close"></div>
+          <!--Вставить стрелку фоном и спозиционировать-->
+          <input name="countries" list="countries" value="Добавить страну">
+          <button class=""></button>
+          <div class="circle circle--no-countri"></div>
+          <button class="step-two-plus"></button>
+          <button class="next-step">следующий шаг</button>
+          <a href="#">На шаг назад</a>
+        </div>
+        <div class="step-three">
+          <h2 class="step-one__title">Шаг 3.</h2>
+          <p class="step-one__title">Развлечения</p>
+          <p class="step-one__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме
+            и ставить тэги.</p>
+          <div class="vertical-line"></div>
+          <div class="horizontal-line-up"></div>
+          <div class="horizontal-line-down"></div>
+          <div class="circle--up"></div>
+          <div class="circle--down"></div>
+          <input type="text" value="Босния и Герцеговина">
+          <!--Вставить флаг фоном-->
+          <textarea name="" cols="35" rows="12"> </textarea>
+          <input type="text" value="Чехия">
+          <!--Вставить флаг фоном-->
+          <textarea name="" cols="35"
+            rows="12">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+          <button type="button" class="Submit">Отправить</button>
+          <a href="#">На шаг назад</a>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer-form">
+      <h2 class="visually-hidden">Погнали?</h2>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+              Инстаграме</a>
+          </li>
+        </ul>
       </div>
-      <div class="step-three">
-        <h2 class="step-one__title">Шаг 3.</h2>
-        <p class="step-one__title">Развлечения</p>
-        <p class="step-one__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-        <div class="vertical-line"></div>
-        <div class="horizontal-line-up"></div>
-        <div class="horizontal-line-down"></div>
-        <div class="circle--up"></div>
-        <div class="circle--down"></div>
-        <input type="text" value="Босния и Герцеговина">
-        <!--Вставить флаг фоном-->
-        <textarea name="" cols="35" rows="12"> </textarea>
-        <input type="text" value="Чехия">
-        <!--Вставить флаг фоном-->
-        <textarea name="" cols="35"
-          rows="12">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-        <button type="button" class="Submit">Отправить</button>
-        <a href="#">На шаг назад</a>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
-    </section>
-  </main>
-  <footer class="page-footer-form">
-    <h2 class="visually-hidden">Погнали?</h2>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
-            Инстаграме</a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    </div>
-  </footer>
-</div>
+    </footer>
+  </div>
 </body>
 
 </html>
