@@ -27,7 +27,7 @@ gulp.task("server", function () {
     notify: false,
     open: true,
     cors: true,
-    ui: false, startPath: "/catalog.html"
+    ui: false, startPath: "/index.html"
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
