@@ -1,0 +1,42 @@
+.country-list__item {
+  box-sizing: border-box;
+  width: 197px;
+  height: 18px;
+  margin-top: 28px;
+  padding-left: 25px;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+
+  &:nth-child(2) {
+    width: 65px;
+    text-align: right;
+    padding: 0;
+    margin-top: 26px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #d2d2d2;
+  }
+
+  &:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: 51px;
+    width: 11px;
+    height: 11px;
+    background-image: url(../../../../../../../../img/user.svg);
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    opacity: 0.1;
+  }
+
+  &:nth-child(3) {
+    margin-top: -10px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #d2d2d2;
+  }
+}
