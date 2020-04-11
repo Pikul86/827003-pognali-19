@@ -1,0 +1,150 @@
+.directions {
+  position: relative;
+  min-height: 1050px;
+  background-color: #edeff6;
+  border: 1px solid #edeff6;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: -60px;
+  z-index: 54;
+}
+
+.directions__title {
+  color: #ff8d30;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 133px;
+  margin-left: 50px;
+}
+
+.directions__text {
+  color: #444444;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: lighter;
+  margin: 0;
+  margin-left: 50px;
+  margin-top: 22px;
+  margin-bottom: 67px;
+  margin-right: 76px;
+}
+
+.directions__list {
+  min-height: 613px;
+  padding: 0;
+  margin: 0;
+  margin-left: 25px;
+  margin-right: 25px;
+  list-style: none;
+
+  &--second {
+    display: inline-flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 267px;
+    min-height: 90px;
+    padding: 0;
+    margin-left: 0;
+    list-style: none;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    margin-top: 94px;
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+.directions__item {
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  margin-bottom: 10px;
+
+  &--thailand {
+    background: url("../../../../../../img/thailand-mobile@1x.jpg") no-repeat;
+  }
+
+  &--france {
+    background: url("../../../../../../img/france-mobile@1x.jpg") no-repeat;
+  }
+
+  &--czech {
+    background: url("../../../../../../img/czech-mobile@1x.jpg") no-repeat;
+  }
+
+  &--second {
+    box-sizing: border-box;
+    width: 197px;
+    height: 18px;
+    margin-top: 28px;
+    padding-left: 25px;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+
+    &:nth-child(2) {
+      width: 65px;
+      text-align: right;
+      padding: 0;
+      margin-top: 26px;
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: 500;
+      color: #d2d2d2;
+    }
+
+    &:nth-child(2)::before {
+      content: "";
+      position: absolute;
+      top: 35px;
+      right: 51px;
+      width: 11px;
+      height: 11px;
+      background-image: url("../../../../../../../../img/user.svg");
+      background-repeat: no-repeat;
+      background-color: #ffffff;
+      opacity: 0.1;
+    }
+
+    &:nth-child(3) {
+      margin-top: -10px;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 500;
+      color: #d2d2d2;
+    }
+  }
+}
+
+.directions__flag {
+  position: absolute;
+  top: 82px;
+  left: 25px;
+  z-index: 3;
+}
+
+.directions-button {
+  position: relative;
+  border-radius: 10px;
+  background-color: #ffd74b;
+  border: transparent;
+  width: 245px;
+  height: 62px;
+  margin-left: 25px;
+  margin-right: 25px;
+  color: #1d2e5b;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 25px;
+
+  &__icon {
+    position: absolute;
+    top: 23px;
+    right: 30px;
+  }
+}
