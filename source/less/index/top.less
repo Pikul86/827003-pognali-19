@@ -5,20 +5,40 @@
     url("../../img/traveller-illustration-mobile@1x.png") 61% 71% no-repeat,
     url("../../img/globe-back-mobile@1x.jpg") 0 0 no-repeat;
   padding-top: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    background: none;
+  }
 }
 
-.top__logo {
-  margin-left: 25px;
-  margin-top: 27px;
-  margin-right: 140px;
+.top__header-index {
+  background: url("../../img/logo-mobile-white@1x.png") 24px 22px no-repeat;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    height: 403px;
+    background: url("../../img/logo-tablet-white@1x.png") 39px 45px no-repeat;
+    background-color: #182044;
+  }
 }
 
 .top__svg {
-  margin-left: auto;
+  margin-left: 270px;
   margin-right: 25px;
-  margin-bottom: 4px;
+  margin-top: 37px;
   width: 25px;
   height: 11px;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 372px;
+    margin-top: 61px;
+    width: 25px;
+    height: 11px;
+    cursor: pointer;
+  }
 }
 
 .top__text {
@@ -32,6 +52,20 @@
   margin-left: 30px;
   margin-right: 31px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    margin-top: 73px;
+    margin-left: 181px;
+    margin-right: 182px;
+    text-align: center;
+  }
 }
 
 .top__list {
@@ -43,6 +77,18 @@
   margin: 0;
   margin-top: 240px;
   margin-left: 25px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    display: inline-flex;
+    width: 189px;
+    height: 50px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: -33px;
+    margin-left: 540px;
+  }
 }
 
 .top__item {
@@ -79,6 +125,47 @@
       text-transform: uppercase;
       text-decoration: none;
       color: #161c35;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #ffffff;
+
+    &--phone {
+      background-color: #ff8d30;
+      padding-top: 10px;
+      display: none;
+    }
+
+    &--mail {
+      background-color: #ffbd30;
+      padding-top: 13px;
+      display: none;
+    }
+
+    &--entrance {
+      box-sizing: border-box;
+      background-color: #ffd74b;
+      width: 189px;
+      height: 50px;
+      border-radius: 35px;
+      text-align: center;
+      padding-top: 12px;
+      padding-right: 3px;
+
+      a {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #161c35;
+      }
     }
   }
 }
