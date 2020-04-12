@@ -1,4 +1,4 @@
-.page-header-form {
+.page-header {
   position: relative;
   min-height: 143px;
   background: url("../../img/logo-mobile-white@1x.png") 10% 10% no-repeat;
@@ -9,10 +9,28 @@
 
   &::after {
     content: "";
-    width: 240px;
-    border: 2px solid #ff8d30;
+    width: 210px;
+    border: 3px solid #ff8d30;
     position: absolute;
-    left: 14px;
+    left: 25px;
     top: 142px;
+    border-radius: 25px;
   }
 }
+
+.page-header__svg {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
+
+.page-header__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 85px;
+  margin-left: 25px;
+}
+
