@@ -4,6 +4,22 @@
   border: 1px solid #dfe3f0;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 456px;
+    background-color: #dfe3f0;
+    border: 1px solid #dfe3f0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 412px;
+    background-color: #dfe3f0;
+    border: 1px solid #dfe3f0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
 }
 
 .plans__title {
@@ -14,6 +30,26 @@
   margin-left: 25px;
   margin-top: 30px;
   margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #1d2e5b;
+    margin-left: 25px;
+    margin-top: 30px;
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #1d2e5b;
+    margin-left: 25px;
+    margin-top: 30px;
+    margin-bottom: 57px;
+  }
 }
 
 .plans__list {
@@ -22,6 +58,24 @@
   margin-left: 25px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    width: 621px;
+    min-height: 318px;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding: 0;
+    list-style: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 1256px;
+    min-height: 318px;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding: 0;
+    list-style: none;
+  }
 }
 
 .plans__items {
@@ -35,6 +89,34 @@
 
   &:nth-child(2) {
     margin-bottom: 30px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 593px;
+    min-height: 154px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    padding-left: 25px;
+
+    &:nth-child(2) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 1256px;
+    min-height: 97px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    padding-left: 25px;
+
+    &:nth-child(2) {
+      margin-bottom: 30px;
+    }
   }
 }
 

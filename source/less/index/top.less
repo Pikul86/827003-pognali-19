@@ -10,6 +10,10 @@
     width: 768px;
     background: none;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
 }
 
 .top__header-index {
@@ -21,6 +25,14 @@
     height: 403px;
     background: url("../../img/logo-tablet-white@1x.png") 39px 45px no-repeat;
     background-color: #182044;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    height: 99px;
+    background: url("../../img/logo-desktop-white@1x.png") 39px 45px no-repeat;
+    background-color: #161c34;
   }
 }
 
@@ -38,6 +50,10 @@
     width: 25px;
     height: 11px;
     cursor: pointer;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 
@@ -66,6 +82,10 @@
     margin-right: 182px;
     text-align: center;
   }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .top__list {
@@ -88,6 +108,18 @@
     margin: 0;
     margin-top: -33px;
     margin-left: 540px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 1;
+    display: inline-flex;
+    width: 290px;
+    height: 50px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+    margin-left: 1090px;
   }
 }
 
@@ -146,6 +178,47 @@
       background-color: #ffbd30;
       padding-top: 13px;
       display: none;
+    }
+
+    &--entrance {
+      box-sizing: border-box;
+      background-color: #ffd74b;
+      width: 189px;
+      height: 50px;
+      border-radius: 35px;
+      text-align: center;
+      padding-top: 12px;
+      padding-right: 3px;
+
+      a {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #161c35;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: #ffffff;
+
+    &--phone {
+      background-color: #ff8d30;
+      padding-top: 16px;
+      display: block;
+    }
+
+    &--mail {
+      background-color: #ffbd30;
+      padding-top: 18px;
+      display: block;
     }
 
     &--entrance {

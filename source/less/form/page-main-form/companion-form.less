@@ -1,14 +1,48 @@
 .companion-form {
   min-height: 445px;
   background-color: #edeff6;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    min-height: 232px;
+    background-color: #edeff6;
+    z-index: 152;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    min-height: 232px;
+    background-color: #edeff6;
+    z-index: 152;
+  }
 }
 
 .companion-form__container {
   display: flex;
-  margin-top: 23px;
+  padding-top: 23px;
   margin-left: 44px;
   margin-right: 41px;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-top: 23px;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    position: absolute;
+    top: -190px;
+    right: 140px;
+    padding-top: 0;
+    margin-left: 450px;
+    margin-right: 41px;
+    margin-bottom: 20px;
+    background-color: #161c35;
+  }
 }
 
 .companion-form__avatar {
@@ -19,6 +53,28 @@
   background: url("../../../img/demin-mobile@1x.jpg") no-repeat;
   background-size: 100%;
   margin-left: 35px;
+
+  @media (min-width: @tablet-width) {
+    width: 94px;
+    height: 94px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    background: url("../../../img/photo-account-tablet@1x.jpg") no-repeat;
+    background-size: 100%;
+    margin-left: 420px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 190px;
+    height: 190px;
+    border: none;
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: url("../../../img/demin-tablet@1x.jpg") no-repeat;
+    background-size: 100%;
+    margin-left: 20px;
+  }
 }
 
 .companion-form__change {
@@ -33,6 +89,44 @@
   line-height: 30px;
   font-weight: bold;
   margin-bottom: 27px;
+
+  @media (min-width: @tablet-width) {
+    width: 618px;
+    height: 60px;
+    margin-top: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
+    color: #161c35;
+    background-color: #dfe3f0;
+    border-radius: 12px;
+    border: transparent;
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 190px;
+    height: 48px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    color: #161c35;
+    background-color: #dfe3f0;
+    border-radius: 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: transparent;
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+    position: absolute;
+    right: 181px;
+  }
 }
 
 .companion-form__tags {
@@ -44,6 +138,17 @@
   padding-left: 38px;
   padding-top: 10px;
   margin-bottom: 19px;
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    width: 270px;
+    min-height: 95px;
+    margin-left: 25px;
+    border-radius: 12px;
+    padding-left: 38px;
+    padding-top: 10px;
+    margin-bottom: 19px;
+  }
 }
 
 .companion-form__legend {
@@ -68,6 +173,26 @@
   min-height: 69px;
   margin-left: 25px;
   border-radius: 12px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 25px;
+    left: 230px;
+    width: 245px;
+    min-height: 69px;
+    margin-left: 25px;
+    border-radius: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    min-height: 69px;
+    margin-left: 25px;
+    border-radius: 12px;
+    position: absolute;
+    top: 65px;
+    right: 20px;
+  }
 }
 
 .companion-form__list {

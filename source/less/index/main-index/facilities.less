@@ -19,6 +19,10 @@
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 1438px;
+  }
 }
 
 .facilities__list {
@@ -39,6 +43,15 @@
     flex-wrap: wrap;
     margin-top: -142px;
     margin-left: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1320px;
+    min-height: 107px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: -220px;
+    margin-left: 60px;
   }
 }
 
@@ -159,6 +172,104 @@
       min-height: 138px;
       margin-top: 0;
       margin-left: -40px;
+      background-color: #ffd74b;
+      border: 1px solid #ffd74b;
+      border-bottom-left-radius: 18px;
+      border-bottom-right-radius: 18px;
+    }
+
+    &:nth-child(1)::after {
+      content: "1";
+      color: #ffffff;
+      position: relative;
+      top: 12px;
+      left: 31px;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    &:nth-child(2)::after {
+      content: "2";
+      color: #ffffff;
+      position: relative;
+      top: 12px;
+      left: 31px;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    &:nth-child(3)::after {
+      content: "3";
+      color: #ffffff;
+      position: relative;
+      top: 12px;
+      left: 31px;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    &:nth-child(4)::after {
+      content: "4";
+      color: #ffffff;
+      position: relative;
+      top: 12px;
+      left: 31px;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    p {
+      padding-left: 32px;
+      padding-right: 160px;
+      padding-top: 32px;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 345px;
+    min-height: 105px;
+    border: 1px solid #ff8d30;
+    background-color: #ff8d30;
+    border-radius: 18px;
+    color: #161c35;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+
+    &:nth-child(1) {
+      width: 343px;
+      min-height: 138px;
+      border-top-left-radius: 18px;
+    }
+
+    &:nth-child(2) {
+      width: 373px;
+      min-height: 138px;
+      margin-top: 0;
+      margin-left: -30px;
+      border-top-left-radius: 18px;
+      border-top-right-radius: 18px;
+      background-color: #ffa530;
+      border: 1px solid #ffa530;
+    }
+
+    &:nth-child(3) {
+      width: 373px;
+      min-height: 138px;
+      margin-top: 0;
+      margin-left: -30px;
+      background-color: #ffbd30;
+      border: 1px solid #ffbd30;
+      border-bottom-left-radius: 18px;
+      border-bottom-right-radius: 18px;
+    }
+
+    &:nth-child(4) {
+      width: 315px;
+      min-height: 138px;
+      margin-top: 0;
+      margin-left: -30px;
       background-color: #ffd74b;
       border: 1px solid #ffd74b;
       border-bottom-left-radius: 18px;
