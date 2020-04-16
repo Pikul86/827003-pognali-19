@@ -1,0 +1,130 @@
+.candidate {
+  width: 270px;
+  min-height: 415px;
+  margin-left: 25px;
+  background-color: #ffffff;
+  margin-bottom: 17px;
+  border-radius: 12px;
+
+  @media (min-width: @tablet-width) {
+    width: 688px;
+    min-height: 332px;
+    margin-left: 40px;
+    background-color: #ffffff;
+    margin-bottom: 17px;
+    border-radius: 12px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 950px;
+    min-height: 332px;
+    margin-left: 61px;
+    background-color: #ffffff;
+    margin-bottom: 17px;
+    border-radius: 12px;
+  }
+}
+
+.photo-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+
+  &--firsova {
+    background: url("../../img/firsova-mobile@1x.jpg");
+  }
+
+  &--demin {
+    background: url("../../../../img/demin-mobile@1x.jpg");
+  }
+
+  &--rogovaya {
+    background: url("../../../../img/rogovaya-mobile@1x.jpg");
+  }
+
+  &--smolov {
+    background: url("../../../../img/smolov-mobile@1x.jpg");
+  }
+}
+
+.pink-circle {
+  width: 31px;
+  height: 31px;
+  border-radius: 50px;
+  background-color: #f9eaea;
+  text-align: center;
+  position: relative;
+
+  svg {
+    width: 13px;
+    height: 11px;
+    position: absolute;
+    top: 11px;
+    left: 9px;
+  }
+}
+
+.blue-circle {
+  width: 31px;
+  height: 31px;
+  border-radius: 50px;
+  background-color: #edeff6;
+  text-align: center;
+  position: relative;
+
+  svg {
+    width: 13px;
+    height: 11px;
+    position: absolute;
+    top: 11px;
+    left: 9px;
+  }
+}
+
+
+.candidate__title {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #1d2e5b;
+}
+
+.candidate__title-p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #161c35;
+}
+
+.candidate__status {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50px;
+
+  &--green {
+    background-color: @green;
+  }
+
+  &--red {
+    background-color: @red;
+  }
+}
+
+.candidate-tag__list {
+  width: 166px;
+  min-height: 32px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-left: 25px;
+}
+
+.candidate__fieldset {
+  width: 270px;
+  min-height: 120px;
+  border: none;
+  margin-left: 25px;
+  border-top: 1px solid #edeff6;
+}
