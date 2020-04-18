@@ -18,23 +18,15 @@
   }
 
   @media (min-width: @tablet-width) {
-    position: relative;
     min-height: 351px;
     background: url("../../../img/logo-tablet-white@1x.png") 10% 10% no-repeat;
     background-color: #161c35;
-    border: 1px solid #161c35;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
     z-index: 150;
 
     &::after {
-      content: "";
-      width: 210px;
-      border: 2px solid #ff8d30;
-      position: absolute;
+      width: 351px;
       left: 25px;
-      top: 142px;
-      border-radius: 25px;
+      top: 351px;
     }
   }
 
@@ -43,20 +35,6 @@
     min-height: 353px;
     background: url("../../../img/logo-desktop-white@1x.png") 10% 10% no-repeat;
     background-color: #161c35;
-    border: 1px solid #161c35;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    z-index: 150;
-
-    &::after {
-      content: "";
-      width: 210px;
-      border: 2px solid #ff8d30;
-      position: absolute;
-      left: 25px;
-      top: 142px;
-      border-radius: 25px;
-    }
   }
 }
 
@@ -80,20 +58,6 @@
   display: none;
 
   @media (min-width: @tablet-width) {
-    display: inline-flex;
-    width: 270px;
-    height: 40px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-top: 240px;
-    margin-left: 25px;
-    position: absolute;
-    top: -200px;
-    right: 10px;
-  }
-
-  @media (min-width: @desktop-width) {
     display: inline-flex;
     width: 270px;
     height: 40px;

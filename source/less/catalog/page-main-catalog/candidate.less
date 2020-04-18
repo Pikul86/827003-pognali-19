@@ -10,18 +10,12 @@
     width: 688px;
     min-height: 332px;
     margin-left: 40px;
-    background-color: #ffffff;
-    margin-bottom: 17px;
-    border-radius: 12px;
   }
 
   @media (min-width: @tablet-width) {
     width: 950px;
     min-height: 332px;
     margin-left: 61px;
-    background-color: #ffffff;
-    margin-bottom: 17px;
-    border-radius: 12px;
   }
 }
 
@@ -47,7 +41,7 @@
   }
 }
 
-.pink-circle {
+.circle {
   width: 31px;
   height: 31px;
   border-radius: 50px;
@@ -55,29 +49,24 @@
   text-align: center;
   position: relative;
 
-  svg {
-    width: 13px;
-    height: 11px;
-    position: absolute;
-    top: 11px;
-    left: 9px;
+  &--pink {
+    svg {
+      width: 13px;
+      height: 11px;
+      position: absolute;
+      top: 11px;
+      left: 9px;
+    }
   }
-}
 
-.blue-circle {
-  width: 31px;
-  height: 31px;
-  border-radius: 50px;
-  background-color: #edeff6;
-  text-align: center;
-  position: relative;
-
-  svg {
-    width: 13px;
-    height: 11px;
-    position: absolute;
-    top: 11px;
-    left: 9px;
+  &--blue {
+    svg {
+      width: 13px;
+      height: 11px;
+      position: absolute;
+      top: 11px;
+      left: 9px;
+    }
   }
 }
 
