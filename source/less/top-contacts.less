@@ -1,0 +1,87 @@
+.top-contacts {
+  margin-left: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 190px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 290px;
+  }
+}
+
+
+.top-contacts__list {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-flex;
+    height: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.top-contacts__item {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #ffffff;
+
+    &--phone {
+      display: none;
+    }
+
+    &--mail {
+      display: none;
+    }
+
+    &--entrance {
+      box-sizing: border-box;
+      display: block;
+      background-color: #ffd74b;
+      width: 189px;
+      height: 50px;
+      border-radius: 35px;
+      text-align: center;
+      padding-top: 11px;
+
+      a {
+        font-size: 17px;
+        line-height: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #161c35;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 50px;
+    height: 50px;
+
+    &--phone {
+      display: block;
+      background-color: #ff8d30;
+      padding-top: 16px;
+    }
+
+    &--mail {
+      display: block;
+      background-color: #ff8d30;
+      padding-top: 19px;
+    }
+
+    &--entrance {
+      width: 189px;
+      height: 50px;
+    }
+  }
+}

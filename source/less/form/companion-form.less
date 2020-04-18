@@ -6,14 +6,12 @@
     position: relative;
     min-height: 232px;
     background-color: #edeff6;
-    z-index: 152;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
     min-height: 232px;
     background-color: #edeff6;
-    z-index: 152;
   }
 }
 
@@ -130,6 +128,7 @@
 }
 
 .companion-form__tags {
+  position: relative;
   box-sizing: border-box;
   width: 270px;
   min-height: 95px;
@@ -157,6 +156,12 @@
   font-weight: bold;
   color: #1d2e5b;
   margin-left: 79px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 90%;
+    background-color: #edeff6;
+  }
 }
 
 .companion-form__textarea {
