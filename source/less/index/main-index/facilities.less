@@ -356,6 +356,15 @@
   margin-right: 59px;
 
   @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 32px;
+    margin-left: 72px;
+    margin-top: 40px;
+    margin-right: 392px;
+  }
+
+  @media (min-width: @desktop-width) {
     color: #ffffff;
     font-size: 28px;
     font-weight: lighter;
@@ -363,9 +372,34 @@
     margin-bottom: 32px;
     margin-left: 72px;
     margin-top: 40px;
-    margin-right: 392px;
+    margin-right: 721px;
   }
 }
+
+.facilities__text br {
+  display: block;
+
+  &:nth-child(2) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+
+    &:nth-child(2) {
+      display: block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+}
+
 
 .facilities__text-p {
   color: #ffffff;
