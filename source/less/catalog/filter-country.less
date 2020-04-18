@@ -1,0 +1,86 @@
+.filter-country {
+  width: 318px;
+  min-height: 888px;
+  background-color: #e2e5f2;
+  border: 1px solid #e2e5f2;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding-top: 50px;
+  margin-top: -40px;
+
+  &__svg {
+    margin-left: 25px;
+    width: 15px;
+    height: 10px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    min-height: 2810px;
+  }
+}
+
+.filter-country__title {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #192144;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-filter__list {
+  min-width: 69px;
+  min-height: 93px;
+  list-style: none;
+  margin: 0;
+  padding-left: 50px;
+}
+
+.modal-filter__item {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #a5aabd;
+
+  &--active {
+    color: #192144;
+  }
+}
+
+.alphabet {
+  margin-left: 50px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.alphabet__td {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #cbced9;
+  background-color: #ffffff;
+  color: #1d2e5b;
+
+  &--active {
+    background-color: #1d2e5b;
+    color: #ffffff;
+  }
+}
+
+.alphabet__list {
+  min-height: 239px;
+  padding-left: 50px;
+  list-style: none;
+}
+
+.alphabet__item {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #444444;
+}

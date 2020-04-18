@@ -2,14 +2,39 @@
   position: relative;
   box-sizing: border-box;
   min-height: 481px;
-  background: url("../../../img/rates@1x.png") no-repeat;
+  background: url("../../../img/rates@1x.png") 200px 40px no-repeat;
   background-size: 30%;
-  background-position: 200px 40px;
   background-color: #edeff6;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   margin-top: -10px;
   z-index: 50;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 481px;
+    background: url("../../../img/rates@1x.png") 80% 85% no-repeat;
+    background-size: 10%;
+    background-color: #edeff6;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-top: -10px;
+    z-index: 50;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 750px;
+    background: url("../../../img/rates@1x.png") 80% 85% no-repeat;
+    background-size: 10%;
+    background-color: #edeff6;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-top: -10px;
+    z-index: 50;
+  }
 }
 
 .new__title {
@@ -22,6 +47,18 @@
   padding-left: 50px;
   padding-right: 150px;
   padding-bottom: 44px;
+
+  @media (min-width: @tablet-width) {
+    color: #ff8d30;
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 53px;
+    padding-left: 136px;
+    padding-right: 150px;
+    padding-bottom: 44px;
+  }
 }
 
 .new__list {

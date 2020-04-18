@@ -1,0 +1,104 @@
+.candidate {
+  width: 270px;
+  min-height: 415px;
+  margin-left: 25px;
+  background-color: #ffffff;
+  margin-bottom: 17px;
+  border-radius: 12px;
+
+  @media (min-width: @tablet-width) {
+    width: 688px;
+    min-height: 332px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 950px;
+    min-height: 332px;
+    margin-left: 61px;
+  }
+}
+
+.photo-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+
+  &--firsova {
+    background: url("../../img/firsova-mobile@1x.jpg");
+  }
+
+  &--demin {
+    background: url("../../../../img/demin-mobile@1x.jpg");
+  }
+
+  &--rogovaya {
+    background: url("../../../../img/rogovaya-mobile@1x.jpg");
+  }
+
+  &--smolov {
+    background: url("../../../../img/smolov-mobile@1x.jpg");
+  }
+}
+
+.circle {
+  width: 31px;
+  height: 31px;
+  border-radius: 50px;
+  background-color: #f9eaea;
+  text-align: center;
+  position: relative;
+
+  &--pink {
+    svg {
+      width: 13px;
+      height: 11px;
+      position: absolute;
+      top: 11px;
+      left: 9px;
+    }
+  }
+
+  &--blue {
+    svg {
+      width: 13px;
+      height: 11px;
+      position: absolute;
+      top: 11px;
+      left: 9px;
+    }
+  }
+}
+
+.candidate__status {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50px;
+
+  &--green {
+    background-color: @green;
+  }
+
+  &--red {
+    background-color: @red;
+  }
+}
+
+.candidate-tag__list {
+  width: 166px;
+  min-height: 32px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-left: 25px;
+}
+
+.candidate__fieldset {
+  width: 270px;
+  min-height: 120px;
+  border: none;
+  margin-left: 25px;
+  border-top: 1px solid #edeff6;
+}
