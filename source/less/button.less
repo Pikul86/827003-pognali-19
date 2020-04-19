@@ -1,0 +1,70 @@
+.button {
+  position: relative;
+  background-color: #ffd74b;
+  border: transparent;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #1d2e5b;
+  text-align: left;
+
+  &__icon {
+    position: absolute;
+    top: 23px;
+    right: 30px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  &__icon-facilities {
+    top: 33px;
+    right: 36px;
+  }
+}
+
+.button__facilities {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    border-radius: 20px;
+    width: 273px;
+    height: 81px;
+    margin-top: 51px;
+    margin-left: 73px;
+    margin-right: 25px;
+    padding-left: 32px;
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 86px;
+    margin-left: 132px;
+  }
+}
+
+.button__directions,
+.button__companion {
+  position: relative;
+  border-radius: 10px;
+  width: 270px;
+  height: 62px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  padding-left: 25px;
+
+  @media (min-width: @tablet-width) {
+    width: 617px;
+    margin-left: 76px;
+    padding-left: 34px;
+  }
+}
+
+.button__companion {
+  @media (min-width: @tablet-width) {
+    margin-top: 50px;
+  }
+}
