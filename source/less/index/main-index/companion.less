@@ -15,6 +15,18 @@
     background-size: 25%, 12%;
     background-color: #182044;
   }
+
+  @media (min-width: @desktop-width) {
+    min-height: 803px;
+    margin-top: -90px;
+    background:
+      url("../../../img/rogovaya-back-desktop@1x.png") 189px 85% no-repeat,
+      url("../../../img/smolov-back-desktop@1x.png") 546px 28% no-repeat;
+    background-size: 286px, 10%;
+    background-color: #182044;
+    border-bottom-right-radius: 58px;
+    border-bottom-left-radius: 58px;
+  }
 }
 
 .companion__title {
@@ -29,6 +41,11 @@
     font-size: 45px;
     line-height: 45px;
     margin-left: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 178px;
+    margin-left: 128px;
   }
 }
 
@@ -54,6 +71,12 @@
       display: block;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 132px;
+    margin-top: 58px;
+    margin-right: 825px;
+  }
 }
 
 .companion__text-p {
@@ -77,6 +100,12 @@
       display: block;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 132px;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
 }
 
 .companion__container {
@@ -88,6 +117,13 @@
     display: flex;
     margin-left: 75px;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 631px;
+    margin-left: auto;
+    margin-right: 60px;
+    margin-top: -317px;
   }
 }
 
@@ -121,6 +157,21 @@
   @media (min-width: @tablet-width) {
     min-height: 285px;
   }
+
+  @media (min-width: @desktop-width) {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+    &--firsova {
+      background: url("../../../../../../img/firsova-desktop@1x.jpg") no-repeat;
+      background-size: 100%;
+    }
+
+    &--demin {
+      background: url("../../../../../../img/demin-desktop@1x.jpg") no-repeat;
+      background-size: 100%;
+    }
+  }
 }
 
 .companion__status {
@@ -138,6 +189,20 @@
 
   &--red {
     background-color: @red;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 40px;
+    left: 46px;
+    width: 7px;
+    height: 7px;
+
+    &--green {
+      top: 42px;
+      left: 56px;
+      width: 7px;
+      height: 7px;
+    }
   }
 }
 
@@ -181,6 +246,15 @@
       left: 60px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    top: 273px;
+    left: 31px;
+
+    &--center {
+      left: 59px;
+    }
+  }
 }
 
 .companion__item {
@@ -193,6 +267,14 @@
   background-color: #ffffff;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: -6px;
+    width: 286px;
+    height: 196px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
 }
 
 .companion__name-text {
@@ -206,6 +288,15 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 55px;
+    padding-right: 53px;
+    padding-top: 30px;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
   }
 }
 
@@ -222,6 +313,33 @@
     margin-top: 21px;
     margin-bottom: 24px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 19px;
+    margin-left: 32px;
+    margin-right: 24px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    &--second {
+      margin-left: 52px;
+    }
+  }
+}
+
+.companion-tag__item {
+  @media (min-width: @desktop-width) {
+    margin-right: 6px;
+
+    &--avocado {
+      margin-left: 40px;
+    }
+
+    &--concers {
+      margin-left: 22px;
+    }
+  }
 }
 
 .companion-button__list {
@@ -236,6 +354,24 @@
 
   @media (min-width: @tablet-width) {
     padding-bottom: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 78px;
+  }
+}
+
+.companion-button__item {
+  @media (min-width: @desktop-width) {
+    margin-right: 5px;
+
+    &:nth-child(2) {
+      margin-right: 1px;
+    }
+
+    &:nth-child(3) {
+      margin-right: -2px;
+    }
   }
 }
 
