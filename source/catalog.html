@@ -11,6 +11,14 @@
 <body>
 
   <header class="page-header">
+    <a>
+      <picture class="page-header__logo">
+        <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png">
+        <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?">
+      </picture>
+    </a>
+
     <svg class="page-header__svg" width="25" height="11" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 11"
       style="enable-background: 0 0 25 11;" xml:space="preserve">
@@ -191,7 +199,7 @@
         </fieldset>
         <button type="submit" class="best-companion-button">Показать</button>
       </form>
-      <section class="">
+      <section class="candidate">
         <div class="photo-avatar photo-avatar--firsova"></div>
         <div class="circle circle--pink">
           <svg>
@@ -199,7 +207,7 @@
           </svg>
         </div>
         <p class="candidate__subscribers">Таня Фирсова</p>
-        <p class="candidate__text">1.5M</p>
+        <p class="candidate__text">1.5 M</p>
         <div class="candidate__status candidate__status--red"></div>
         <ul class="candidate-tag">
           <li class="candidate-tag__list">#ЗОЖ</li>
@@ -210,7 +218,7 @@
           <li class="candidate-tag__list">#смузи</li>
         </ul>
         <fieldset class="candidate__fieldset">
-          <legend>хочет посетить:</legend>
+          <legend class="candidate__legend">хочет посетить:</legend>
           <ul class="candidate__list">
             <li class="candidate-country__list country__list--sri-lanka">Шри-Ланка</li>
             <li class="candidate-country__list country__list--thailand">Таиланд</li>
