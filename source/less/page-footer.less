@@ -12,17 +12,14 @@
     min-height: 239px;
     background: url("../../img/logo-tablet-blue@1x.png") 5% 25% no-repeat;
     background-color: #ffffff;
-    z-index: 44;
     margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 1440px;
     min-height: 239px;
-    background: url("../../img/logo-tablet-blue@1x.png") 5% 25% no-repeat;
+    background: url("../../img/logo-desktop-blue@1x.png") 60px 46% no-repeat;
     background-color: #ffffff;
-    z-index: 44;
-    margin-top: 0;
   }
 }
 
@@ -42,6 +39,11 @@
   @media (min-width: @tablet-width) {
     min-height: 45px;
     padding-left: 325px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 629px;
+    padding-top: 84px;
   }
 }
 
@@ -148,6 +150,16 @@
       position: absolute;
       top: 14px;
       left: -20px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 38px;
+    right: 46px;
+
+    &--link {
+      top: 37px;
+      left: -41px;
     }
   }
 }

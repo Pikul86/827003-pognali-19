@@ -9,18 +9,12 @@
 
   @media (min-width: @tablet-width) {
     min-height: 350px;
-    margin-top: -50px;
-    z-index: 46;
   }
 
   @media (min-width: @desktop-width) {
-    position: relative;
-    background-color: #ffd74b;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    min-height: 280px;
-    margin-top: -50px;
-    z-index: 46;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    min-height: 250px;
   }
 }
 
@@ -34,6 +28,11 @@
     margin-top: 0;
     margin-left: 75px;
     padding-top: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 105px;
+    margin-left: 283px;
   }
 }
 
@@ -49,6 +48,12 @@
     height: 68px;
     margin-bottom: 44px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 90px;
+    height: 90px;
+    margin-right: 31px;
+  }
 }
 
 .adress__text {
@@ -63,6 +68,11 @@
     font-size: 28px;
     line-height: 28px;
     padding-top: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 29px;
+    text-transform: uppercase;
   }
 }
 
@@ -108,6 +118,26 @@
 
     &__icon {
       top: 27px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 323px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: 134px;
+    border-radius: 18px;
+    margin-top: -128px;
+    display: block;
+
+    &__text {
+      width: 270px;
+      padding-left: 2px;
+    }
+
+    &__icon {
+      top: 30px;
+      right: 33px;
     }
   }
 }
