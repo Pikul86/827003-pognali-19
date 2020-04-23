@@ -1,13 +1,17 @@
 .candidate {
   width: 270px;
-  min-height: 415px;
+  min-height: 414px;
   margin-left: 25px;
   background-color: #ffffff;
-  margin-bottom: 17px;
+  margin-bottom: 11px;
   border-radius: 12px;
   position: relative;
   box-sizing: border-box;
   padding-top: 12px;
+
+  &__second {
+    min-height: 393px;
+  }
 
   @media (min-width: @tablet-width) {
     width: 688px;
@@ -33,15 +37,15 @@
   }
 
   &--demin {
-    background: url("../../../../img/demin-mobile@1x.jpg") no-repeat;
+    background: url("../../img/demin-mobile@1x.jpg") no-repeat;
   }
 
   &--rogovaya {
-    background: url("../../../../img/rogovaya-mobile@1x.jpg") no-repeat;
+    background: url("../../img/rogovaya-mobile@1x.jpg") no-repeat;
   }
 
   &--smolov {
-    background: url("../../../../img/smolov-mobile@1x.jpg") no-repeat;
+    background: url("../../img/smolov-mobile@1x.jpg") no-repeat;
   }
 }
 
@@ -117,11 +121,12 @@
 .candidate-tag {
   display: flex;
   flex-wrap: wrap;
-  width: 210px;
+  width: 200px;
   height: 40px;
   margin: 0;
   padding-left: 24px;
   margin-top: 15px;
+  margin-bottom: 13px;
 }
 
 .candidate-tag__list {
@@ -199,6 +204,15 @@
       background-color: #ffffff;
     }
   }
+
+  &__second {
+    border: none;
+    border-top: 1px solid #edeff6;
+    width: 244px;
+    height: 68px;
+    margin: 0;
+    margin-top: -39px;
+  }
 }
 
 .candidate-button__list {
@@ -241,3 +255,4 @@
 .candidate-level {
   margin-top: -23px;
 }
+
