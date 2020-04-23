@@ -17,9 +17,10 @@
     width: 688px;
     min-height: 332px;
     margin-left: 40px;
+    padding-top: 36px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     width: 950px;
     min-height: 332px;
     margin-left: 61px;
@@ -47,6 +48,29 @@
   &--smolov {
     background: url("../../img/smolov-mobile@1x.jpg") no-repeat;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 190px;
+    height: 190px;
+    border-radius: 15px;
+    margin-left: 36px;
+
+    &--firsova {
+      background: url("../../img/firsova-tablet@1x.jpg") no-repeat;
+    }
+
+    &--demin {
+      background: url("../../img/demin-tablet@1x.jpg") no-repeat;
+    }
+
+    &--rogovaya {
+      background: url("../../img/rogovaya-tablet@1x.jpg") no-repeat;
+    }
+
+    &--smolov {
+      background: url("../../img/smolov-tablet@1x.jpg") no-repeat;
+    }
+  }
 }
 
 .circle {
@@ -71,11 +95,26 @@
 
   &--blue {
     svg {
-      width: 13px;
-      height: 11px;
       position: absolute;
       top: 11px;
       left: 9px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 50px;
+    height: 50px;
+    margin-left: 404px;
+    margin-top: -51px;
+
+    &--pink {
+      svg {
+        width: 20px;
+        height: 17px;
+        position: absolute;
+        top: 19px;
+        left: 14px;
+      }
     }
   }
 }
@@ -89,6 +128,14 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: bold;
+
+  @media (min-width: @tablet-width) {
+    width: 190px;
+    margin-left: 259px;
+    margin-top: -193px;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .candidate__text {
@@ -98,6 +145,13 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: bold;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 460px;
+    margin-top: 123px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .candidate__status {
@@ -116,6 +170,13 @@
   &--red {
     background-color: @red;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 7px;
+    height: 7px;
+    top: 45px;
+    right: 213px;
+  }
 }
 
 .candidate-tag {
@@ -127,6 +188,12 @@
   padding-left: 24px;
   margin-top: 15px;
   margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -135px;
+    margin-left: 238px;
+    width: 250px;
+  }
 }
 
 .candidate-tag__list {
@@ -138,6 +205,11 @@
   line-height: 18px;
   font-weight: 400;
   margin-right: 5px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .candidate__fieldset {
@@ -147,6 +219,11 @@
   margin-left: 25px;
   border-top: 1px solid #edeff6;
   margin-top: -2px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 44px;
+    margin-top: 126px;
+  }
 }
 
 .candidate__legend {
@@ -154,6 +231,10 @@
   font-size: 15px;
   line-height: 18px;
   font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 27px;
+  }
 }
 
 .candidate__list {
@@ -163,6 +244,12 @@
   font-weight: 500;
   text-transform: uppercase;
   color: #1d2e5b;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .candidate__item {
@@ -173,6 +260,18 @@
   &:nth-child(2) {
     margin-top: 11px;
     margin-bottom: 13px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: -9px;
+    width: 120px;
+    margin-right: 73px;
+    margin-left: -15px;
+
+    &:nth-child(2) {
+      margin-top: -9px;
+      margin-right: 51px;
+    }
   }
 }
 
@@ -213,6 +312,13 @@
     margin: 0;
     margin-top: -39px;
   }
+
+  @media (min-width: @tablet-width) {
+    visibility: hidden;
+    margin-left: auto;
+    margin-top: -287px;
+    margin-right: 37px;
+  }
 }
 
 .candidate-button__list {
@@ -223,6 +329,16 @@
   padding: 0;
   padding-bottom: 11px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    visibility: visible;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -105px;
+    width: 20px;
+    margin-left: auto;
+    margin-right: 4px;
+  }
 }
 
 
@@ -238,6 +354,10 @@
   border-radius: 25px;
   padding-top: 1px;
   padding-left: 7px;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .candidate-button__svg {
@@ -250,9 +370,13 @@
   &--active {
     fill: #1d2e5b;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 19px;
+    height: 21px;
+  }
 }
 
 .candidate-level {
   margin-top: -23px;
 }
-
