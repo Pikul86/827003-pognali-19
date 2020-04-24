@@ -17,6 +17,7 @@
     width: 688px;
     min-height: 332px;
     margin-left: 40px;
+    margin-bottom: 41px;
     padding-top: 36px;
   }
 
@@ -116,6 +117,16 @@
         left: 14px;
       }
     }
+
+    &--blue {
+      svg {
+        width: 20px;
+        height: 17px;
+        position: absolute;
+        top: 17px;
+        left: 14px;
+      }
+    }
   }
 }
 
@@ -130,7 +141,7 @@
   font-weight: bold;
 
   @media (min-width: @tablet-width) {
-    width: 190px;
+    width: 220px;
     margin-left: 259px;
     margin-top: -193px;
     font-size: 30px;
@@ -176,6 +187,11 @@
     height: 7px;
     top: 45px;
     right: 213px;
+
+    &:nth-child(2) {
+      top: 48px;
+      right: 213px;
+    }
   }
 }
 
@@ -318,6 +334,13 @@
     margin-left: auto;
     margin-top: -287px;
     margin-right: 37px;
+
+    &__second {
+      visibility: hidden;
+      margin-left: auto;
+      margin-top: -287px;
+      margin-right: 37px;
+    }
   }
 }
 
