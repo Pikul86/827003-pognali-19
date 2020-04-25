@@ -23,8 +23,10 @@
 
   @media (min-width: @desktop-width) {
     width: 950px;
-    min-height: 332px;
-    margin-left: 61px;
+    min-height: 285px;
+    margin-left: 60px;
+    padding-top: 0;
+    margin-bottom: 29px;
   }
 }
 
@@ -70,6 +72,31 @@
 
     &--smolov {
       background: url("../../img/smolov-tablet@1x.jpg") no-repeat;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 285px;
+    height: 285px;
+    border-radius: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-left: -5px;
+
+    &--firsova {
+      background: url("../../img/firsova-desktop@1x.jpg") no-repeat;
+    }
+
+    &--demin {
+      background: url("../../img/demin-desktop@1x.jpg") no-repeat;
+    }
+
+    &--rogovaya {
+      background: url("../../img/rogovaya-desktop@1x.jpg") no-repeat;
+    }
+
+    &--smolov {
+      background: url("../../img/smolov-desktop@1x.jpg") no-repeat;
     }
   }
 }
@@ -128,6 +155,13 @@
       }
     }
   }
+
+  @media (min-width: @desktop-width) {
+    width: 50px;
+    height: 50px;
+    margin-left: 485px;
+    margin-top: -100px;
+  }
 }
 
 .candidate__subscribers {
@@ -147,6 +181,11 @@
     font-size: 30px;
     line-height: 30px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 340px;
+    margin-top: -192px;
+  }
 }
 
 .candidate__text {
@@ -162,6 +201,10 @@
     margin-top: 123px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 543px;
   }
 }
 
@@ -193,6 +236,12 @@
       right: 213px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    top: 56px;
+    right: 0;
+    left: 315px;
+  }
 }
 
 .candidate-tag {
@@ -209,6 +258,10 @@
     margin-top: -135px;
     margin-left: 238px;
     width: 250px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 321px;
   }
 }
 
@@ -237,8 +290,15 @@
   margin-top: -2px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 44px;
     margin-top: 126px;
+    margin-left: 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    visibility: hidden;
+    margin-top: -135px;
+    margin-left: auto;
+    margin-right: 22px;
   }
 }
 
@@ -266,6 +326,11 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: @desktop-width) {
+    visibility: visible;
+    display: block;
+  }
 }
 
 .candidate__item {
@@ -287,6 +352,17 @@
     &:nth-child(2) {
       margin-top: -9px;
       margin-right: 51px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -9px;
+    width: 120px;
+    margin-right: 73px;
+    margin-left: -15px;
+
+    &:nth-child(2) {
+      margin-top: 9px;
     }
   }
 }
@@ -342,6 +418,20 @@
       margin-right: 37px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    visibility: hidden;
+    margin-left: auto;
+    margin-top: -25px;
+    margin-right: 38px;
+
+    &__second {
+      visibility: hidden;
+      margin-left: auto;
+      margin-top: -5px;
+      margin-right: 37px;
+    }
+  }
 }
 
 .candidate-button__list {
@@ -361,6 +451,12 @@
     width: 20px;
     margin-left: auto;
     margin-right: 4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: nowrap;
+    margin-top: 0;
+    margin-right: 217px;
   }
 }
 
