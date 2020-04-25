@@ -9,6 +9,8 @@
     width: 190px;
     margin-right: 40px;
     margin-top: 40px;
+    top: -12px;
+    right: 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -33,6 +35,7 @@
 
 .top-contacts__item {
   box-sizing: border-box;
+  border: transparent;
   border-radius: 50px;
   width: 40px;
   height: 40px;
@@ -43,21 +46,29 @@
   &--phone {
     display: block;
     background-color: #ff8d30;
-    padding-top: 11px;
+    padding-top: 7px;
   }
 
   &--phone:hover {
     background-color: #f26926;
   }
 
+  &--phone:focus path {
+    fill: #b0522b;
+  }
+
   &--mail {
     display: block;
     background-color: #ffbd30;
-    padding-top: 13px;
+    padding-top: 9px;
   }
 
   &--mail:hover {
     background-color: #ff8d30;
+  }
+
+  &--mail:focus path {
+    fill: #b96b32;
   }
 
   &--entrance {
