@@ -1,16 +1,15 @@
 .top-contacts {
   position: absolute;
-    width: 290px;
-    margin: 0;
-    margin-left: 25px;
-    top: 438px;
+  width: 290px;
+  margin: 0;
+  margin-left: 25px;
+  top: 438px;
 
   @media (min-width: @tablet-width) {
     width: 190px;
     margin-right: 40px;
     margin-top: 40px;
   }
-
 
   @media (min-width: @desktop-width) {
     width: 290px;
@@ -39,6 +38,7 @@
   height: 40px;
   text-align: center;
   background-color: #ffffff;
+  cursor: pointer;
 
   &--phone {
     display: block;
@@ -46,10 +46,18 @@
     padding-top: 11px;
   }
 
+  &--phone:hover {
+    background-color: #f26926;
+  }
+
   &--mail {
     display: block;
-    background-color: #ff8d30;
+    background-color: #ffbd30;
     padding-top: 13px;
+  }
+
+  &--mail:hover {
+    background-color: #ff8d30;
   }
 
   &--entrance {
@@ -70,6 +78,14 @@
       text-decoration: none;
       color: #161c35;
     }
+  }
+
+  &--entrance:hover {
+    background-color: #ffbd30;
+  }
+
+  &--entrance a:focus {
+    color: #b98c32;
   }
 
   @media (min-width: @tablet-width) {
