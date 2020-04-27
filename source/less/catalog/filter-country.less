@@ -51,6 +51,14 @@
   margin-top: -32px;
   cursor: pointer;
   padding: 7px;
+
+  &:hover {
+    fill: #696f8a;
+  }
+
+  &:focus {
+    fill: #a5aabd;
+  }
 }
 
 .dots-none {
@@ -83,9 +91,18 @@
   font-size: 16px;
   line-height: 22px;
   font-weight: bold;
+  text-transform: uppercase;
   color: #a5aabd;
+  cursor: pointer;
+  border: transparent;
+  background: transparent;
+  padding: 0;
 
-  &--active {
+  &:hover {
+    color: #696f8a;
+  }
+
+  &:focus {
     color: #192144;
   }
 }
