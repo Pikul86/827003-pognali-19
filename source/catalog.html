@@ -12,7 +12,7 @@
 
   <header class="page-header">
     <a href="index.html">
-        <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?">
+      <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?">
     </a>
 
     <svg class="page-header__svg" width="25" height="11" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,14 @@
         <rect y="4" width="8" height="2" />
       </svg>
       <h2 class="filter-country__title">Фильтрация по странам</h2>
-      <!--Вставить картинку с 3-мя точками и сделать её замену потом на крестик-->
+      <svg class="dots" width="17" height="3" x="0px" y="0px" viewBox="0 0 27 5">
+        <circle class="st0" cx="2.5" cy="2.5" r="2.5" />
+        <circle class="st0" cx="13.5" cy="2.5" r="2.5" />
+        <circle class="st0" cx="24.5" cy="2.5" r="2.5" />
+      </svg>
+      <svg class="catalog-close-top" x="0px" y="0px" viewBox="0 0 18.6 18.6">
+        <path d="M11.4,9.3l6.7-6.7c0.6-0.6,0.6-1.5,0-2.1s-1.5-0.6-2.1,0L9.3,7.2L2.6,0.4C2-0.1,1-0.1,0.4,0.4C-0.1,1-0.1,2,0.4,2.6l6.7,6.7L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1,0s0.6-1.5,0-2.1L11.4,9.3z"/>
+      </svg>
       <div class="modal-filter">
         <ul class="modal-filter__list">
           <li class="modal-filter__item modal-filter__item--active">Европа</li>
@@ -137,8 +144,12 @@
           <li class="alphabet__item">Армения</li>
           <li class="alphabet__item">Афганистан</li>
         </ul>
-        <button class="close">Свернуть</button>
-        <!--Добавить крестик закрытия фоном-->
+        <button class="close">
+          <svg class="close__svg" width="12" height="12" x="0px" y="0px" viewBox="0 0 18.6 18.6" style="enable-background:new 0 0 18.6 18.6;" xml:space="preserve">
+            <path d="M11.4,9.3l6.7-6.7c0.6-0.6,0.6-1.5,0-2.1s-1.5-0.6-2.1,0L9.3,7.2L2.6,0.4C2-0.1,1-0.1,0.4,0.4C-0.1,1-0.1,2,0.4,2.6l6.7,6.7L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1,0s0.6-1.5,0-2.1L11.4,9.3z"/>
+          </svg>
+          Свернуть
+        </button>
       </div>
     </section>
     <form class="best-companion" method="get" action="https://echo.htmlacademy.ru">
@@ -285,7 +296,8 @@
       <div class="photo-avatar photo-avatar--demin"></div>
       <div class="circle circle--blue">
         <svg width="13" height="11" viewBox="0 0 20 17">
-          <path d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z"/>
+          <path
+            d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z" />
         </svg>
       </div>
       <p class="candidate__subscribers">Петя Демин</p>
@@ -571,7 +583,7 @@
         </svg>
       </a>
   </footer>
-  <script src="js/popup.js"></script>
+  <script src="js/catalog.js"></script>
 </body>
 
 </html>
