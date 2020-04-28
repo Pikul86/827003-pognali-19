@@ -153,7 +153,7 @@
           <li class="alphabet__item">Афганистан</li>
         </ul>
         <button class="close">
-          <svg class="close__svg" width="12" height="12" x="0px" y="0px" viewBox="0 0 18.6 18.6" style="enable-background:new 0 0 18.6 18.6;" xml:space="preserve">
+          <svg class="close__svg" width="12" height="12" x="0px" y="0px" viewBox="0 0 18.6 18.6">
             <path d="M11.4,9.3l6.7-6.7c0.6-0.6,0.6-1.5,0-2.1s-1.5-0.6-2.1,0L9.3,7.2L2.6,0.4C2-0.1,1-0.1,0.4,0.4C-0.1,1-0.1,2,0.4,2.6l6.7,6.7L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1,0s0.6-1.5,0-2.1L11.4,9.3z"/>
           </svg>
           Свернуть
@@ -162,39 +162,57 @@
     </section>
     <form class="best-companion" method="get" action="https://echo.htmlacademy.ru">
       <h2 class="best-companion__title">Подберите идеального попутчика</h2>
-      <fieldset class="best-companion__list">
-        <legend class="best-companion__list-legend">Хобби</legend>
-        <button></button>
-      </fieldset>
-      <fieldset class="best-companion__list">
-        <legend class="best-companion__list-legend">Музыка</legend>
-        <img src="" alt="">
-        <!--вставить стрелку которая будет разворачивать список-->
-        <input type="checkbox" name="rock" id="rock">
-        <label for="rock">Тяжелый рок</label>
-        <input type="checkbox" name="rap" id="rap">
-        <label for="rap">Русский рэп</label>
-        <input type="checkbox" name="dance" id="dance">
-        <label for="dance">Евроденс</label>
-      </fieldset>
-      <fieldset class="best-companion__list">
-        <legend class="best-companion__list-legend">Еда</legend>
-        <img src="" alt="">
-        <!--вставить стрелку которая будет разворачивать список-->
-      </fieldset>
-      <fieldset class="best-companion__list">
-        <legend class="best-companion__list-legend">Транспорт</legend>
-        <img src="" alt="">
-        <!--вставить стрелку которая будет разворачивать список-->
+      <div class="best-companion__list">
+        <p class="best-companion__text">Хобби</p>
+        <button class="best-companion__button--down" type="button">
+          <svg width="8" height="4" x="0px" y="0px" viewBox="0 0 10 5">
+            <polygon points="5,5 0,0 10,0 " />
+          </svg>
+        </button>
+      </div>
+      <div class="best-companion__list">
+        <p class="best-companion__text">Музыка</p>
+        <button class="best-companion__button--down" type="button">
+          <svg width="8" height="4" x="0px" y="0px" viewBox="0 0 10 5">
+            <polygon points="5,5 0,0 10,0 " />
+          </svg>
+        </button>
+        <div class="best-companion__checkbox">
+          <input type="checkbox" class="visually-hidden rock" name="rock" id="rock" checked>
+          <label class="best-companion-label" for="rock">Тяжелый рок</label>
+          <input type="checkbox" class="visually-hidden rap" name="rap" id="rap">
+          <label class="best-companion-label" for="rap">Русский рэп</label>
+          <input type="checkbox" class="visually-hidden dance" name="dance" id="dance">
+          <label class="best-companion-label" for="dance">Евроденс</label>
+        </div>
+      </div>
+      <div class="best-companion__list">
+        <p class="best-companion__text">Еда</p>
+        <button class="best-companion__button--down" type="button">
+          <svg width="8" height="4" x="0px" y="0px" viewBox="0 0 10 5">
+            <polygon points="5,5 0,0 10,0 " />
+          </svg>
+        </button>
+      </div>
+      <div class="best-companion__list">
+        <p class="best-companion__text">Транспорт</p>
+        <button class="best-companion__button--down" type="button">
+          <svg width="8" height="4" x="0px" y="0px" viewBox="0 0 10 5">
+            <polygon points="5,5 0,0 10,0 " />
+          </svg>
+        </button>
         <button type="button">картинка самолёта</button>
         <button type="button">картинка поезда</button>
         <button type="button">картинка велосипеда</button>
         <button type="button">картинка бегом</button>
-      </fieldset>
-      <fieldset class="best-companion__list">
-        <legend class="best-companion__list-legend">Левел</legend>
-        <img src="" alt="">
-        <!--вставить стрелку которая будет разворачивать список-->
+      </div>
+      <div class="best-companion__list">
+        <p class="best-companion__text">Левел</p>
+        <button class="best-companion__button--down" type="button">
+          <svg width="8" height="4" x="0px" y="0px" viewBox="0 0 10 5">
+            <polygon points="5,5 0,0 10,0 " />
+          </svg>
+        </button>
         <div class="modal-level">
           <div class="level-controls">
             <!--Сделать 2 псевдоэлемента чёрточки сверху и снизу в центре выбора уровня-->
@@ -210,7 +228,7 @@
             <div class="range-toggle range-toggle-max"></div>
           </div>
         </div>
-      </fieldset>
+      </div>
       <button type="submit" class="best-companion-button">Показать</button>
     </form>
 

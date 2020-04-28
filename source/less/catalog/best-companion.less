@@ -33,11 +33,91 @@
 }
 
 .best-companion__list {
-  width: 220px;
+  width: 200px;
   min-height: 40px;
   border: none;
+  border-top: 1px solid #f3c72b;
+  margin-left: 20px;
 }
 
-.best-companion__list-legend {
+.best-companion__text {
   margin-left: 25px;
+  margin-top: 7px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #1d2e5b;
+}
+
+.best-companion__button--down {
+  display: block;
+  margin-left: auto;
+  margin-right: 20px;
+  border: transparent;
+  background: transparent;
+  margin-top: -36px;
+}
+
+.best-companion__checkbox {
+  position: relative;
+  margin-left: 46px;
+  width: 105px;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.best-companion-label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.rock + label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -24px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #cbced9;
+  background-color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rap + label::before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  left: -24px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #cbced9;
+  background-color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dance + label::before {
+  content: "";
+  position: absolute;
+  top: 65px;
+  left: -24px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #cbced9;
+  background-color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.rock:checked + label::before,
+.rap:checked + label::before,
+.dance:checked + label::before {
+  background: url("../../../img/tick.svg") 5px 4px no-repeat;
+  background-size: 50%;
+  background-color: #ffffff;
 }
