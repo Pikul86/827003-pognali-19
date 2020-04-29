@@ -28,4 +28,3 @@ closebottom.addEventListener("click", function (evt) {
   modal.classList.add("modal-delete");
   dots.classList.remove("dots-delete");
 });
-
