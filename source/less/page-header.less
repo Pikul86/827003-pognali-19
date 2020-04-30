@@ -1,7 +1,6 @@
 .page-header {
   position: relative;
   min-height: 143px;
-  background: url("../../img/logo-mobile-white@1x.png") 10% 10% no-repeat;
   background-color: #161c35;
   border: 1px solid #161c35;
   border-bottom-left-radius: 12px;
@@ -13,7 +12,7 @@
     border: 3px solid #ff8d30;
     position: absolute;
     left: 25px;
-    top: 142px;
+    top: 147px;
     border-radius: 25px;
   }
 
@@ -35,6 +34,13 @@
     min-height: 353px;
     background: url("../../../img/logo-desktop-white@1x.png") 10% 10% no-repeat;
     background-color: #161c35;
+  }
+}
+
+.page-header__logo {
+  @media (min-width: @tablet-width) {
+    width: 166px;
+    height: 42px;
   }
 }
 

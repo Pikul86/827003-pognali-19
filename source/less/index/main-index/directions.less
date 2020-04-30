@@ -2,17 +2,19 @@
   position: relative;
   min-height: 1050px;
   background-color: #edeff6;
-  border: 1px solid #edeff6;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  margin-top: -60px;
+  margin-top: -81px;
+  padding-top: 40px;
   z-index: 54;
 
   @media (min-width: @tablet-width) {
     position: relative;
     min-height: 1050px;
+    background:
+      url("../../../img/flags-back@1x.png") 98% 26% no-repeat,
+      url("../../../img/blue-back.png") 6% 45% no-repeat;
     background-color: #edeff6;
-    border: 1px solid #edeff6;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     margin-top: -60px;
@@ -20,14 +22,14 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: relative;
-    min-height: 1050px;
+    min-height: 780px;
+    background:
+      url("../../../img/flags-back@1x.png") 95% 58% no-repeat,
+      url("../../../img/blue-back.png") 60px 19% no-repeat;
     background-color: #edeff6;
-    border: 1px solid #edeff6;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    margin-top: -60px;
-    z-index: 54;
+    margin-top: -30px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 }
 
@@ -40,10 +42,19 @@
   margin-top: 133px;
   margin-left: 50px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     font-size: 45px;
     line-height: 45px;
     font-weight: bold;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-left: auto;
+    margin-right: 310px;
+    text-align: right;
+    margin-top: 0;
+    padding-top: 190px;
   }
 }
 
@@ -58,10 +69,17 @@
   margin-bottom: 67px;
   margin-right: 76px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     font-size: 28px;
     line-height: 33px;
-    font-weight: lighter;
+    margin-bottom: 114px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 861px;
+    margin-right: 240px;
+    margin-bottom: 0;
+    margin-top: 60px;
   }
 }
 
@@ -82,32 +100,47 @@
     padding: 0;
     margin-left: 0;
     list-style: none;
-    border: 1px solid transparent;
     border-radius: 12px;
-    margin-top: 94px;
+    margin-top: -10px;
     background-color: #ffffff;
     color: #000000;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+    min-height: 440px;
+    margin-left: 76px;
+    margin-bottom: 47px;
+
+    &--second {
+      margin-top: 0;
+      width: 433px;
+      min-height: 140px;
+      margin-left: 0;
+      border-radius: 0;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -269px;
+    margin-left: 66px;
+
+    &--second {
+      margin-top: 0;
+      margin-left: 0;
+      width: 373px;
+      border-top-left-radius: 16px;
+      border-bottom-left-radius: 16px;
+    }
   }
 }
 
 .directions__item {
-  position: relative;
   box-sizing: border-box;
-  border: 1px solid transparent;
   border-radius: 12px;
   margin-bottom: 10px;
-
-  &--thailand {
-    background: url("../../../../../../img/thailand-mobile@1x.jpg") no-repeat;
-  }
-
-  &--france {
-    background: url("../../../../../../img/france-mobile@1x.jpg") no-repeat;
-  }
-
-  &--czech {
-    background: url("../../../../../../img/czech-mobile@1x.jpg") no-repeat;
-  }
 
   &--second {
     box-sizing: border-box;
@@ -151,34 +184,126 @@
       color: #d2d2d2;
     }
   }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 619px;
+    height: 140px;
+
+    &--second {
+      height: 18px;
+
+      &:nth-child(2) {
+        margin-left: 50px;
+        font-size: 20px;
+      }
+
+      &:nth-child(2)::before {
+        top: 96px;
+        right: 0;
+        left: 20px;
+        width: 20px;
+        height: 20px;
+      }
+
+      &:nth-child(3) {
+        margin-top: -77px;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 559px;
+    margin-left: 65px;
+
+    &--second {
+      width: 373px;
+      font-size: 24px;
+      line-height: 24px;
+      margin-left: 6px;
+      margin-top: 22px;
+
+      &:nth-child(2) {
+        margin-top: 29px;
+        margin-left: 60px;
+      }
+
+      &:nth-child(2)::before {
+        top: 96px;
+        right: 0;
+        left: 30px;
+      }
+
+      &:nth-child(3) {
+        margin-left: 6px;
+        font-size: 20px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+.directions__container {
+  height: 110px;
+  position: relative;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+  &--thailand {
+    background: url("../../../../../../img/thailand-mobile@1x.jpg") 90% 0% no-repeat;
+  }
+
+  &--france {
+    background: url("../../../../../../img/france-mobile@1x.jpg") 90% 0% no-repeat;
+  }
+
+  &--czech {
+    background: url("../../../../../../img/czech-mobile@1x.jpg") 90% 0% no-repeat;
+  }
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    width: 186px;
+    height: 140px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+    &--thailand {
+      background: url("../../../../../../img/thailand-desktop@1x.jpg") no-repeat;
+    }
+
+    &--france {
+      background: url("../../../../../../img/france-desktop@1x.jpg") no-repeat;
+    }
+
+    &--czech {
+      background: url("../../../../../../img/czech-desktop@1x.jpg") no-repeat;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+  }
 }
 
 .directions__flag {
   position: absolute;
-  top: 82px;
+  top: 88px;
   left: 25px;
   z-index: 3;
-}
 
-.directions-button {
-  position: relative;
-  border-radius: 10px;
-  background-color: #ffd74b;
-  border: transparent;
-  width: 245px;
-  height: 62px;
-  margin-left: 25px;
-  margin-right: 25px;
-  color: #1d2e5b;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: bold;
-  text-align: left;
-  padding-left: 25px;
+  @media (min-width: @tablet-width) {
+    width: 70px;
+    height: 47px;
+    top: 15px;
+    left: -37px;
+  }
 
-  &__icon {
-    position: absolute;
+  @media (min-width: @desktop-width) {
     top: 23px;
-    right: 30px;
+    left: -35px;
   }
 }

@@ -1,0 +1,182 @@
+.button {
+  position: relative;
+  background-color: #ffd74b;
+  border: transparent;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #1d2e5b;
+  text-align: left;
+
+  &__icon {
+    position: absolute;
+    top: 23px;
+    right: 30px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  &__icon-facilities {
+    top: 33px;
+    right: 36px;
+  }
+}
+
+.button--facilities {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    border-radius: 20px;
+    width: 273px;
+    height: 81px;
+    margin-top: 51px;
+    margin-left: 73px;
+    margin-right: 25px;
+    padding-left: 32px;
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 86px;
+    margin-left: 132px;
+  }
+}
+
+.button--directions,
+.button--companion {
+  position: relative;
+  border-radius: 10px;
+  width: 270px;
+  height: 62px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  padding-left: 25px;
+
+  @media (min-width: @tablet-width) {
+    width: 617px;
+    margin-left: 76px;
+    padding-left: 34px;
+  }
+}
+
+.button--companion {
+  @media (min-width: @tablet-width) {
+    margin-top: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 539px;
+    left: 55px;
+    width: 279px;
+    height: 80px;
+    border-radius: 20px;
+  }
+}
+
+.button--directions {
+  cursor: pointer;
+  opacity: #1d2e5b;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:focus {
+    color: #bb923d;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 274px;
+    height: 80px;
+    margin-right: 305px;
+    display: block;
+    border-radius: 20px;
+    position: absolute;
+    right: -2px;
+    bottom: 124px;
+  }
+}
+
+.button__directions-icon {
+  position: absolute;
+  top: 22px;
+  right: 30px;
+
+  @media (min-width: @desktop-width) {
+    top: 33px;
+    right: 35px;
+  }
+}
+
+.button__companion-icon {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 33px;
+    right: 35px;
+  }
+}
+
+.button-candidate {
+  width: 230px;
+  height: 40px;
+  margin-left: 19px;
+  border-radius: 20px;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: transparent;
+  background-color: #ffd74b;
+
+  @media (min-width: @tablet-width) {
+    width: 148px;
+    height: 50px;
+    margin-left: 254px;
+    margin-top: -4px;
+    border-radius: 25px;
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    bottom: 49px;
+    margin-left: 336px;
+  }
+}
+
+
+.close {
+  width: 270px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #d6daed;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: transparent;
+  margin-left: 25px;
+  margin-bottom: 27px;
+  cursor: pointer;
+
+  &:hover path {
+    fill: #696f8a;
+  }
+
+  &:hover {
+    color: #696f8a;
+  }
+
+  &:focus path {
+    fill: #a5aabd;
+  }
+
+  &:focus {
+    color: #a5aabd;
+  }
+}

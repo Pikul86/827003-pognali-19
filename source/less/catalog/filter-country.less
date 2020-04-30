@@ -1,6 +1,6 @@
 .filter-country {
   width: 318px;
-  min-height: 888px;
+  min-height: 40px;
   background-color: #e2e5f2;
   border: 1px solid #e2e5f2;
   border-bottom-right-radius: 12px;
@@ -31,6 +31,52 @@
   color: #192144;
   padding: 0;
   margin: 0;
+  text-align: center;
+  margin-top: -19px;
+  margin-bottom: 15px;
+}
+
+.modal-filter {
+  margin-top: 25px;
+}
+
+.modal-delete {
+  display: none;
+}
+
+.dots {
+  display: block;
+  margin-left: auto;
+  margin-right: 15px;
+  margin-top: -32px;
+  cursor: pointer;
+  padding: 7px;
+
+  &:hover {
+    fill: #696f8a;
+  }
+
+  &:focus {
+    fill: #a5aabd;
+  }
+}
+
+.dots-delete {
+  display: none;
+}
+
+.catalog-close-top {
+  width: 12px;
+  height: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: 18px;
+  margin-top: -30px;
+  cursor: pointer;
+}
+
+.catalog-close {
+  display: none;
 }
 
 .modal-filter__list {
@@ -45,9 +91,18 @@
   font-size: 16px;
   line-height: 22px;
   font-weight: bold;
+  text-transform: uppercase;
   color: #a5aabd;
+  cursor: pointer;
+  border: transparent;
+  background: transparent;
+  padding: 0;
 
-  &--active {
+  &:hover {
+    color: #696f8a;
+  }
+
+  &:focus {
     color: #192144;
   }
 }
@@ -65,11 +120,6 @@
   border: 1px solid #cbced9;
   background-color: #ffffff;
   color: #1d2e5b;
-
-  &--active {
-    background-color: #1d2e5b;
-    color: #ffffff;
-  }
 }
 
 .alphabet__list {

@@ -15,11 +15,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    right: 100px;
     width: 286px;
     min-height: 816px;
-    margin-left: 40px;
+    margin-left: auto;
+    margin-bottom: -845px;
+    margin-right: 61px;
   }
 }
 
@@ -32,12 +32,189 @@
   margin-right: 75px;
 }
 
-.best-companion__list {
+.best-companion__info {
   width: 220px;
   min-height: 40px;
   border: none;
+  border-top: 1px solid #f3c72b;
+  margin-left: 20px;
 }
 
-.best-companion__list-legend {
+.best-companion__text {
   margin-left: 25px;
+  margin-top: 7px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #1d2e5b;
+}
+
+.best-companion__button--down {
+  display: block;
+  margin-left: auto;
+  margin-right: -5px;
+  border: transparent;
+  background: transparent;
+  margin-top: -36px;
+  cursor: pointer;
+}
+
+.best-companion__close {
+  display: none;
+}
+
+.best-companion__checkbox {
+  position: relative;
+  margin-left: 46px;
+  width: 105px;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.best-companion-label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.checkbox + label::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #cbced9;
+  background-color: #ffffff;
+  border-radius: 5px;
+  left: -24px;
+  cursor: pointer;
+}
+
+.checkbox--rock + label::before {
+  top: -4px;
+}
+
+.checkbox--rap + label::before {
+  top: 31px;
+}
+
+.checkbox--dance + label::before {
+  top: 65px;
+}
+
+.checkbox:checked + label::before {
+  background: url("../../../img/tick.svg") 5px 4px no-repeat;
+  background-size: 50%;
+  background-color: #ffffff;
+}
+
+.modal-level {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.level-controls {
+  display: flex;
+
+  &::before {
+    content: "";
+    height: 10px;
+    position: absolute;
+    left: 110px;
+    border: 1px solid #cbced9;
+    border-left: none;
+  }
+
+  &::after {
+    content: "";
+    height: 10px;
+    position: absolute;
+    left: 110px;
+    top: 24px;
+    border: 1px solid #cbced9;
+    border-left: none;
+  }
+}
+
+.vertical-line {
+  position: absolute;
+  top: 17px;
+  left: 102px;
+  width: 15px;
+  border: 1px solid #cbced9;
+  border-bottom: none;
+}
+
+.min-level {
+  width: 109px;
+  height: 33px;
+  text-align: center;
+  border: 1px solid #cbced9;
+  border-right: none;
+  font-size: 15px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #1d2e5b;
+}
+
+.max-level {
+  width: 109px;
+  height: 33px;
+  text-align: center;
+  border: 1px solid #cbced9;
+  border-left: none;
+  font-size: 15px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #1d2e5b;
+}
+
+.range-controls {
+  position: relative;
+  margin-top: 24px;
+}
+
+.scale {
+  width: 220px;
+  border: 1px solid #d2b54e;
+}
+
+.bar {
+  width: 144px;
+  border: 1px solid #1d2e5b;
+  margin-left: auto;
+}
+
+.range-toggle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: #1d2e5b;
+  position: absolute;
+
+  &--min {
+    top: -3px;
+    left: 68px;
+  }
+
+  &--max {
+    top: -3px;
+    right: -2px;
+  }
+}
+
+.best-companion-button {
+  width: 230px;
+  height: 40px;
+  background-color: #ffffff;
+  border: transparent;
+  border-radius: 25px;
+  margin-left: 20px;
+  margin-bottom: 22px;
+  color: #161c35;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
 }

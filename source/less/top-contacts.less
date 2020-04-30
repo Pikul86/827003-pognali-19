@@ -1,18 +1,33 @@
 .top-contacts {
-  margin-left: auto;
+  position: absolute;
+  width: 290px;
+  margin: 0;
+  margin-left: 25px;
+  top: 438px;
 
   @media (min-width: @tablet-width) {
     width: 190px;
+    margin-right: 40px;
+    margin-top: 40px;
+    top: -12px;
+    right: 20px;
   }
 
   @media (min-width: @desktop-width) {
     width: 290px;
+    margin-right: 59px;
+    margin-top: 48px;
   }
 }
 
-
 .top-contacts__list {
-  display: none;
+  display: inline-flex;
+  padding: 0;
+  list-style: none;
+
+  &--catalog {
+    display: none;
+  }
 
   @media (min-width: @tablet-width) {
     display: inline-flex;
@@ -24,7 +39,70 @@
 }
 
 .top-contacts__item {
-  display: none;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  &--phone {
+    display: block;
+    background-color: #ff8d30;
+    padding-top: 7px;
+  }
+
+  &--phone:hover {
+    background-color: #f26926;
+  }
+
+  &--phone:focus path {
+    fill: #b0522b;
+  }
+
+  &--mail {
+    display: block;
+    background-color: #ffbd30;
+    padding-top: 9px;
+  }
+
+  &--mail:hover {
+    background-color: #ff8d30;
+  }
+
+  &--mail:focus path {
+    fill: #b96b32;
+  }
+
+  &--entrance {
+    box-sizing: border-box;
+    display: block;
+    background-color: #ffd74b;
+    width: 189px;
+    border-radius: 35px;
+    text-align: center;
+    padding-top: 5px;
+    padding-right: 2px;
+
+    a {
+      font-size: 17px;
+      line-height: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #161c35;
+    }
+  }
+
+  &--entrance:hover {
+    background-color: #ffbd30;
+  }
+
+  &--entrance a:focus {
+    color: #b98c32;
+  }
 
   @media (min-width: @tablet-width) {
     box-sizing: border-box;
@@ -53,7 +131,7 @@
       padding-top: 11px;
 
       a {
-        font-size: 17px;
+        font-size: 20px;
         line-height: 30px;
         font-weight: bold;
         text-transform: uppercase;

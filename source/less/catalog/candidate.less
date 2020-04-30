@@ -1,21 +1,32 @@
 .candidate {
   width: 270px;
-  min-height: 415px;
+  min-height: 414px;
   margin-left: 25px;
   background-color: #ffffff;
-  margin-bottom: 17px;
+  margin-bottom: 11px;
   border-radius: 12px;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 12px;
+
+  &--second {
+    min-height: 393px;
+  }
 
   @media (min-width: @tablet-width) {
     width: 688px;
     min-height: 332px;
     margin-left: 40px;
+    margin-bottom: 41px;
+    padding-top: 36px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     width: 950px;
-    min-height: 332px;
-    margin-left: 61px;
+    min-height: 285px;
+    margin-left: 60px;
+    padding-top: 0;
+    margin-bottom: 29px;
   }
 }
 
@@ -23,21 +34,70 @@
   width: 70px;
   height: 70px;
   border-radius: 50px;
+  margin-left: 17px;
 
   &--firsova {
-    background: url("../../img/firsova-mobile@1x.jpg");
+    background: url("../../img/firsova-mobile@1x.jpg") no-repeat;
   }
 
   &--demin {
-    background: url("../../../../img/demin-mobile@1x.jpg");
+    background: url("../../img/demin-mobile@1x.jpg") no-repeat;
   }
 
   &--rogovaya {
-    background: url("../../../../img/rogovaya-mobile@1x.jpg");
+    background: url("../../img/rogovaya-mobile@1x.jpg") no-repeat;
   }
 
   &--smolov {
-    background: url("../../../../img/smolov-mobile@1x.jpg");
+    background: url("../../img/smolov-mobile@1x.jpg") no-repeat;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 190px;
+    height: 190px;
+    border-radius: 15px;
+    margin-left: 36px;
+
+    &--firsova {
+      background: url("../../img/firsova-tablet@1x.jpg") no-repeat;
+    }
+
+    &--demin {
+      background: url("../../img/demin-tablet@1x.jpg") no-repeat;
+    }
+
+    &--rogovaya {
+      background: url("../../img/rogovaya-tablet@1x.jpg") no-repeat;
+    }
+
+    &--smolov {
+      background: url("../../img/smolov-tablet@1x.jpg") no-repeat;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 285px;
+    height: 285px;
+    border-radius: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-left: -5px;
+
+    &--firsova {
+      background: url("../../img/firsova-desktop@1x.jpg") no-repeat;
+    }
+
+    &--demin {
+      background: url("../../img/demin-desktop@1x.jpg") no-repeat;
+    }
+
+    &--rogovaya {
+      background: url("../../img/rogovaya-desktop@1x.jpg") no-repeat;
+    }
+
+    &--smolov {
+      background: url("../../img/smolov-desktop@1x.jpg") no-repeat;
+    }
   }
 }
 
@@ -48,6 +108,8 @@
   background-color: #f9eaea;
   text-align: center;
   position: relative;
+  margin-top: -31px;
+  margin-left: 66px;
 
   &--pink {
     svg {
@@ -61,12 +123,88 @@
 
   &--blue {
     svg {
-      width: 13px;
-      height: 11px;
       position: absolute;
       top: 11px;
       left: 9px;
     }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 50px;
+    height: 50px;
+    margin-left: 404px;
+    margin-top: -51px;
+
+    &--pink {
+      svg {
+        width: 20px;
+        height: 17px;
+        position: absolute;
+        top: 19px;
+        left: 14px;
+      }
+    }
+
+    &--blue {
+      svg {
+        width: 20px;
+        height: 17px;
+        position: absolute;
+        top: 17px;
+        left: 14px;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 50px;
+    height: 50px;
+    margin-left: 485px;
+    margin-top: -100px;
+  }
+}
+
+.candidate__subscribers {
+  margin-top: -72px;
+  margin-left: 103px;
+  margin-right: 50px;
+  width: 90px;
+  color: #1d2e5b;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+
+  @media (min-width: @tablet-width) {
+    width: 220px;
+    margin-left: 259px;
+    margin-top: -193px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 340px;
+    margin-top: -192px;
+  }
+}
+
+.candidate__text {
+  display: block;
+  margin-left: 103px;
+  margin-top: -12px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 460px;
+    margin-top: 123px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 543px;
   }
 }
 
@@ -75,6 +213,9 @@
   width: 6px;
   height: 6px;
   border-radius: 50px;
+  position: absolute;
+  top: 21px;
+  right: 23px;
 
   &--green {
     background-color: @green;
@@ -83,22 +224,216 @@
   &--red {
     background-color: @red;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 7px;
+    height: 7px;
+    top: 45px;
+    right: 213px;
+
+    &:nth-child(2) {
+      top: 48px;
+      right: 213px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 56px;
+    right: 0;
+    left: 315px;
+  }
+}
+
+.candidate-tag {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 40px;
+  margin: 0;
+  padding-left: 24px;
+  margin-top: 15px;
+  margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -135px;
+    margin-left: 238px;
+    width: 250px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 321px;
+  }
 }
 
 .candidate-tag__list {
-  width: 166px;
-  min-height: 32px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin-left: 25px;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-right: 5px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .candidate__fieldset {
-  width: 270px;
+  width: 210px;
   min-height: 120px;
   border: none;
   margin-left: 25px;
   border-top: 1px solid #edeff6;
+  margin-top: -2px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 126px;
+    margin-left: 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    visibility: hidden;
+    margin-top: -135px;
+    margin-left: auto;
+    margin-right: 22px;
+  }
+}
+
+.candidate__legend {
+  margin-left: -11px;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 27px;
+  }
+}
+
+.candidate__list {
+  list-style: none;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #1d2e5b;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    visibility: visible;
+    display: block;
+  }
+}
+
+.candidate__item {
+  margin-top: -5px;
+  margin-left: -13px;
+  position: relative;
+
+  &:nth-child(2) {
+    margin-top: 11px;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: -9px;
+    width: 120px;
+    margin-right: 73px;
+    margin-left: -15px;
+
+    &:nth-child(2) {
+      margin-top: -9px;
+      margin-right: 51px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -9px;
+    width: 120px;
+    margin-right: 73px;
+    margin-left: -15px;
+
+    &:nth-child(2) {
+      margin-top: 9px;
+    }
+  }
+}
+
+.candidate__item-img {
+  position: absolute;
+  top: 0;
+  left: -39px;
+}
+
+.candidate-transport {
+  border: none;
+  border-top: 1px solid #edeff6;
+  width: 244px;
+  height: 68px;
+  margin: 0;
+  margin-top: -17px;
+
+  &__legend {
+    margin-left: 14px;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+
+    &--second {
+      width: 43px;
+      position: relative;
+      top: -26px;
+      left: 194px;
+      background-color: #ffffff;
+    }
+  }
+
+  &--second {
+    border: none;
+    border-top: 1px solid #edeff6;
+    width: 244px;
+    height: 68px;
+    margin: 0;
+    margin-top: -39px;
+  }
+
+  @media (min-width: @tablet-width) {
+    visibility: hidden;
+    margin-left: auto;
+    margin-top: -287px;
+    margin-right: 37px;
+
+    &--second {
+      visibility: hidden;
+      margin-left: auto;
+      margin-top: -287px;
+      margin-right: 37px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    visibility: hidden;
+    margin-left: auto;
+    margin-top: -25px;
+    margin-right: 38px;
+
+    &--second {
+      visibility: hidden;
+      margin-left: auto;
+      margin-top: -5px;
+      margin-right: 37px;
+    }
+  }
+}
+
+.candidate-level {
+  margin-top: -23px;
 }

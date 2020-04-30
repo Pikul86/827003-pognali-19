@@ -1,7 +1,6 @@
 var link = document.querySelector(".top__svg");
 var popup = document.querySelector(".menu");
-var close = document.querySelector(".menu__close")
-
+var close = document.querySelector(".menu__close");
 
 
 popup.classList.add("menu-none");

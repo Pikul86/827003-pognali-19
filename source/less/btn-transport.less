@@ -1,0 +1,65 @@
+.btn-transport {
+  display: flex;
+  list-style: none;
+  margin-left: 11px;
+  margin-top: -11px;
+  padding: 0;
+  padding-bottom: 11px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    visibility: visible;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -105px;
+    width: 20px;
+    margin-left: auto;
+    margin-right: 4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: nowrap;
+    margin-top: 0;
+    margin-right: 217px;
+  }
+}
+
+.btn-transport__companion {
+  margin-top: 15px;
+  margin-left: 21px;
+}
+
+.btn-transport__item {
+  margin-right: 0;
+}
+
+.btn-transport__icon {
+  width: 32px;
+  height: 32px;
+  border: transparent;
+  background-color: #edeff6;
+  border-radius: 25px;
+  padding-top: 1px;
+  padding-left: 7px;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.btn-transport__svg {
+  fill: #d9d9d9;
+
+  &:nth-child(4) {
+    margin-right: -2px;
+  }
+
+  &--active {
+    fill: #1d2e5b;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 19px;
+    height: 21px;
+  }
+}
