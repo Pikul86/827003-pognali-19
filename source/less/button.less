@@ -149,7 +149,6 @@
   }
 }
 
-
 .close {
   width: 270px;
   height: 40px;
@@ -179,4 +178,25 @@
   &:focus {
     color: #a5aabd;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    height: 100px;
+    margin-left: 75px;
+  }
+}
+
+.close-top {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-left: auto;
+    background: transparent;
+
+  }
+}
+
+.close__svg--top {
+  margin-left: 30px;
 }

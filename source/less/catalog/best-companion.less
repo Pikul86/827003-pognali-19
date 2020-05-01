@@ -30,6 +30,16 @@
   color: #1d2e5b;
   margin-left: 25px;
   margin-right: 75px;
+
+  @media (min-width: @tablet-width) {
+    width: 590px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 30px;
+    margin-left: 36px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #f3c72b;
+  }
 }
 
 .best-companion__info {
@@ -38,6 +48,17 @@
   border: none;
   border-top: 1px solid #f3c72b;
   margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+    display: flex;
+    margin-left: 25px;
+    border: none;
+
+    &:nth-child(6) {
+      border-bottom: 1px solid #f3c72b;
+    }
+  }
 }
 
 .best-companion__text {
@@ -47,6 +68,10 @@
   line-height: 18px;
   font-weight: bold;
   color: #1d2e5b;
+
+  @media (min-width: @tablet-width) {
+    width: 55px;
+  }
 }
 
 .best-companion__button--down {
@@ -57,6 +82,10 @@
   background: transparent;
   margin-top: -36px;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .best-companion__close {
@@ -66,17 +95,36 @@
 .best-companion__checkbox {
   position: relative;
   margin-left: 46px;
-  width: 105px;
+  min-width: 105px;
   font-size: 15px;
   line-height: 15px;
   font-weight: 400;
   margin-top: 20px;
   margin-bottom: 20px;
+
+  &--first {
+    display: none;
+  }
+
+  &--third {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    min-width: 300px;
+    margin-top: 10px;
+  }
 }
 
 .best-companion-label {
   display: block;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 150px;
+    margin-right: 20px;
+  }
 }
 
 .checkbox + label::before {
@@ -91,16 +139,66 @@
   cursor: pointer;
 }
 
+.checkbox--sport + label::before {
+  @media (min-width: @tablet-width) {
+    top: -4px;
+  }
+}
+
+.checkbox--hookah + label::before {
+  @media (min-width: @tablet-width) {
+    top: -4px;
+    left: 140px;
+  }
+}
+
+.checkbox--sofa + label::before {
+  @media (min-width: @tablet-width) {
+    top: -4px;
+    left: 310px;
+  }
+}
+
 .checkbox--rock + label::before {
   top: -4px;
 }
 
 .checkbox--rap + label::before {
   top: 31px;
+
+  @media (min-width: @tablet-width) {
+    top: -4px;
+    left: 140px;
+  }
 }
 
 .checkbox--dance + label::before {
   top: 65px;
+
+  @media (min-width: @tablet-width) {
+    top: -4px;
+    left: 310px;
+  }
+}
+
+.checkbox--meat + label::before {
+  @media (min-width: @tablet-width) {
+    top: -4px;
+  }
+}
+
+.checkbox--sits + label::before {
+  @media (min-width: @tablet-width) {
+    top: -4px;
+    left: 140px;
+  }
+}
+
+.checkbox--vegan + label::before {
+  @media (min-width: @tablet-width) {
+    top: -4px;
+    left: 310px;
+  }
 }
 
 .checkbox:checked + label::before {
@@ -113,6 +211,12 @@
   position: relative;
   margin-top: 15px;
   margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
 }
 
 .level-controls {
@@ -135,6 +239,12 @@
     top: 24px;
     border: 1px solid #cbced9;
     border-left: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    order: 2;
+    margin-left: 15px;
   }
 }
 
@@ -174,11 +284,16 @@
 .range-controls {
   position: relative;
   margin-top: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 15px;
+  }
 }
 
 .scale {
   width: 220px;
-  border: 1px solid #d2b54e;
+  height: 2px;
+  background-color: #d2b54e;
 }
 
 .bar {
@@ -217,4 +332,11 @@
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
+
+  @media (min-width: @tablet-width) {
+    width: 618px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 35px;
+  }
 }
