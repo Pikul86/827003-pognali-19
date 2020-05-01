@@ -7,7 +7,7 @@ var checkbox = document.querySelector(".best-companion__checkbox");
 var btntransport = document.querySelector(".btn-transport__companion");
 
 modal.classList.add("modal-delete");
-close.classList.add("catalog-close");
+/*close.classList.add("catalog-close");*/
 
 dots.addEventListener("click", function (evt) {
   evt.preventDefault();

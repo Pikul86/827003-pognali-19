@@ -64,6 +64,10 @@
 
 .modal-filter {
   margin-top: 25px;
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
 }
 
 .modal-delete {
@@ -167,6 +171,10 @@
   @media (min-width: @tablet-width) {
     margin-left: 75px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 95px;
+  }
 }
 
 .alphabet__td {
@@ -196,12 +204,47 @@
       color: #1d2e5b;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    width: 254px;
+    height: 607px;
+    text-align: left;
+    padding: 0;
+    vertical-align: top;
+  }
 }
 
 .alphabet__list {
   min-height: 239px;
   padding-left: 50px;
   list-style: none;
+
+  &--two,
+  &--three,
+  &--four,
+  &--five,
+  &--six,
+  &--seven,
+  &--eight,
+  &--nine,
+  &--ten,
+  &--eleven,
+  &--twelve,
+  &--thirteen,
+  &--fourteen,
+  &--fifteen,
+  &--sixteen,
+  &--seventeen,
+  &--eighteen,
+  &--nineteen,
+  &--twenty,
+  &--twenty-one,
+  &--twenty-two,
+  &--twenty-three,
+  &--twenty-four,
+  &--twenty-five {
+    display: none;
+  }
 
   @media (min-width: @tablet-width) {
     display: block;
@@ -210,6 +253,76 @@
     margin-right: 40px;
     margin-top: -310px;
     margin-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    margin-top: 0;
+    top: 145px;
+    left: 43px;
+
+    &--two {
+      position: absolute;
+      display: block;
+      top: 145px;
+      left: 300px;
+    }
+
+    &--three {
+      position: absolute;
+      display: block;
+      top: 145px;
+      left: 557px;
+    }
+
+    &--four {
+      position: absolute;
+      display: block;
+      top: 145px;
+      right: 320px;
+    }
+
+    &--five {
+      position: absolute;
+      display: block;
+      top: 145px;
+      right: 70px;
+    }
+
+    &--six {
+      position: absolute;
+      display: block;
+      top: 740px;
+      left: 48px;
+    }
+
+    &--seven {
+      position: absolute;
+      display: block;
+      top: 740px;
+      left: 300px;
+    }
+
+    &--eight {
+      position: absolute;
+      display: block;
+      top: 740px;
+      left: 557px;
+    }
+
+    &--nine {
+      position: absolute;
+      display: block;
+      top: 740px;
+      right: 320px;
+    }
+
+    &--ten {
+      position: absolute;
+      display: block;
+      top: 740px;
+      right: 70px;
+    }
   }
 }
 
