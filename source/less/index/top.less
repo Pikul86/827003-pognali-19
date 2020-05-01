@@ -18,13 +18,11 @@
 
 .top__header-index {
   position: relative;
-  background: url("../../img/logo-mobile-white@1x.png") 24px 22px no-repeat;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     height: 403px;
-    background: url("../../img/logo-tablet-white@1x.png") 39px 45px no-repeat;
     background-color: #182044;
   }
 
@@ -32,8 +30,26 @@
     display: flex;
     flex-direction: column;
     height: 99px;
-    background: url("../../img/logo-desktop-white@1x.png") 60px 47px no-repeat;
     background-color: #161c34;
+  }
+}
+
+.header-logo {
+  display: block;
+  margin-left: 25px;
+  padding-top: 27px;
+  margin-bottom: -47px;
+}
+
+.header-logo__picture {
+  @media (min-width: @tablet-width) {
+    width: 166px;
+    height: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 200px;
+    height: 52px;
   }
 }
 
