@@ -3,7 +3,6 @@
   min-height: 239px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  background: url("../../../img/logo-mobile-blue@1x.png") 50% 10% no-repeat;
   background-color: #ffffff;
   z-index: 44;
 
@@ -19,8 +18,19 @@
   @media (min-width: @desktop-width) {
     max-width: 1440px;
     min-height: 239px;
-    background: url("../../img/logo-desktop-blue@1x.png") 60px 46% no-repeat;
     background-color: #ffffff;
+  }
+}
+
+.footer-logo__picture {
+  @media (min-width: @tablet-width) {
+    width: 164px;
+    height: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 198px;
+    height: 52px;
   }
 }
 
@@ -30,7 +40,6 @@
 
 .page-footer--catalog {
   padding-top: 10px;
-  background: url("../../img/logo-tablet-blue@1x.png") 40px 27% no-repeat;
   background-color: #ffffff;
 }
 
