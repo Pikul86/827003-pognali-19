@@ -52,6 +52,11 @@
   background-size: 100%;
   margin-left: 35px;
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../../../img/demin-mobile@2x.jpg") no-repeat;
+    background-size: 101px;
+  }
+
   @media (min-width: @tablet-width) {
     width: 94px;
     height: 94px;
@@ -60,6 +65,11 @@
     background: url("../../../img/photo-account-tablet@1x.jpg") no-repeat;
     background-size: 100%;
     margin-left: 420px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../../../img/photo-account-tablet@2x.jpg") no-repeat;
+      background-size: 95px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -72,6 +82,11 @@
     background: url("../../../img/demin-tablet@1x.jpg") no-repeat;
     background-size: 100%;
     margin-left: 20px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../../../img/photo-account-tablet@2x.jpg") no-repeat;
+      background-size: 189px;
+    }
   }
 }
 
