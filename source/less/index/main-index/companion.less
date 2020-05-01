@@ -1,11 +1,23 @@
 .companion {
   position: relative;
   min-height: 1130px;
-  background: url("../../../../img/back-companion.jpg") no-repeat;
+  background:
+    url("../../../img/smolov-back-desktop@1x.png") 87% 8% no-repeat,
+    url("../../../img/rogovaya-back-mobile@1x.png") -2% 23% no-repeat;
+  background-color: #182044;
   margin-top: -40px;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
   z-index: 52;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background:
+      url("../../../img/smolov-back-desktop@2x.png") 87% 8% no-repeat,
+      url("../../../img/rogovaya-back-mobile@2x.png") -2% 23% no-repeat;
+    background-color: #182044;
+    background-size: 160px, 70px;
+  }
+
 
   @media (min-width: @tablet-width) {
     margin-top: -55px;
@@ -14,6 +26,14 @@
       url("../../../img/smolov-back-desktop@1x.png") 6% 33% no-repeat;
     background-size: 25%, 12%;
     background-color: #182044;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background:
+        url("../../../img/rogovaya-back-desktop@2x.png") 85% 15% no-repeat,
+        url("../../../img/smolov-back-desktop@2x.png") 6% 33% no-repeat;
+      background-size: 25%, 12%;
+      background-color: #182044;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -26,6 +46,14 @@
     background-color: #182044;
     border-bottom-right-radius: 58px;
     border-bottom-left-radius: 58px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background:
+        url("../../../img/rogovaya-back-desktop@1x.png") 189px 85% no-repeat,
+        url("../../../img/smolov-back-desktop@1x.png") 546px 28% no-repeat;
+      background-size: 286px, 10%;
+      background-color: #182044;
+    }
   }
 }
 
@@ -154,8 +182,32 @@
     background-size: cover;
   }
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    &--firsova {
+      background: url("../../../../../../img/firsova-desktop@2x.jpg") no-repeat;
+      background-size: cover;
+    }
+
+    &--demin {
+      background: url("../../../../../../img/demin-desktop@2x.jpg") no-repeat;
+      background-size: cover;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     min-height: 285px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      &--firsova {
+        background: url("../../../../../../img/firsova-desktop@2x.jpg") no-repeat;
+        background-size: cover;
+      }
+
+      &--demin {
+        background: url("../../../../../../img/demin-desktop@2x.jpg") no-repeat;
+        background-size: cover;
+      }
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -170,6 +222,18 @@
     &--demin {
       background: url("../../../../../../img/demin-desktop@1x.jpg") no-repeat;
       background-size: 100%;
+    }
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      &--firsova {
+        background: url("../../../../../../img/firsova-desktop@2x.jpg") no-repeat;
+        background-size: cover;
+      }
+
+      &--demin {
+        background: url("../../../../../../img/demin-desktop@2x.jpg") no-repeat;
+        background-size: cover;
+      }
     }
   }
 }
