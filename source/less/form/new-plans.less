@@ -2,9 +2,9 @@
   min-height: 2481px;
   background-color: #d4d9eb;
   border: 1px solid #d4d9eb;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  margin-top: -10px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: -25px;
 
   @media (min-width: @tablet-width) {
     min-height: 2800px;
@@ -41,6 +41,14 @@
     margin-left: 25px;
     margin-top: 30px;
   }
+}
+
+.new-plans__dots {
+  display: block;
+  margin-left: auto;
+  margin-right: 43px;
+  margin-top: -34px;
+  margin-bottom: 40px;
 }
 
 .step {
@@ -265,5 +273,41 @@
 }
 
 .month {
+  width: 220px;
+  height: 44px;
   margin-top: 26px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: transparent;
+  border-top: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #1d2e5b;
+}
+
+.triangle {
+  position: absolute;
+  border: transparent;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  &--left {
+    margin-left: -213px;
+    margin-top: 37px;
+  }
+
+  &--right {
+    margin-left: -25px;
+    margin-top: 37px;
+  }
+
+  &__svg {
+    fill: #bbbfcc;
+  }
 }

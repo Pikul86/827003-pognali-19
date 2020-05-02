@@ -152,6 +152,11 @@
 
       <section class="new-plans">
         <h2 class="new-plans__title">Добавить план:</h2>
+        <svg class="new-plans__dots" width="47" height="6" x="0px" y="0px" viewBox="0 0 27 5">
+          <circle class="new-plans__dots new-plans__dots--one" fill="#1d2e5b" cx="2.5" cy="2.5" r="2.5" />
+          <circle class="st0" cx="13.5" cy="2.5" r="2.5" fill="#bbbfcc"/>
+          <circle class="st0" cx="24.5" cy="2.5" r="2.5" fill="#bbbfcc"/>
+        </svg>
         <div class="step">
           <h2 class="step__text-p">Шаг 1.</h2>
           <p class="step__text-p">Даты пребывания</p>
@@ -169,8 +174,16 @@
           <input type="checkbox" class="visually-hidden kids" name="kids" id="kids-field" checked>
           <label class="kids__label" for="kids-field">Можно с детьми</label>
           <input class="month" type="text" value="Март 2019">
-          <button class="back"></button>
-          <button class="next"></button>
+          <button class="triangle triangle--left">
+            <svg class="triangle__svg" width="9" height="18" x="0px" y="0px" viewBox="0 0 18 34">
+              <path d="M3.6,17l14-14.4c0.6-0.6,0.6-1.6,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L0.4,15.9c-0.6,0.6-0.6,1.6,0,2.1l15.1,15.5c0.3,0.3,0.7,0.4,1,0.4s0.8-0.1,1-0.4c0.6-0.6,0.6-1.6,0-2.1L3.6,17z"/>
+            </svg>
+          </button>
+          <button class="triangle triangle--right">
+            <svg width="9" height="18" class="triangle__svg" x="0px" y="0px" viewBox="0 0 18 34">
+              <path d="M14.4,17L0.4,2.6C-0.1,2-0.1,1,0.4,0.4c0.6-0.6,1.5-0.6,2.1,0l15.1,15.5c0.6,0.6,0.6,1.6,0,2.1L2.5,33.6c-0.3,0.3-0.7,0.4-1,0.4s-0.8-0.1-1-0.4c-0.6-0.6-0.6-1.6,0-2.1L14.4,17z"/>
+            </svg>
+          </button>
           <table class="calendar">
             <tr>
               <th>П</th>
