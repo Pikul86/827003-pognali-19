@@ -256,24 +256,31 @@
           <p class="step__text-p">Маршрут</p>
           <p class="step__text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько
           </p>
-          <input name="countries" list="countries" value="Босния и Герцеговина">
-          <button class="down"></button>
-          <div class="circle circle--bosnia"></div>
-          <div class="flag-step--bosnia"></div>
-          <div class="close"></div>
-          <!--Вставить стрелку фоном и спозиционировать-->
-          <input name="countries" list="countries" value="Чехия">
-          <button class="down"></button>
-          <div class="circle circle--czech"></div>
-          <div class="flag-step--czech"></div>
-          <div class="close"></div>
-          <!--Вставить стрелку фоном и спозиционировать-->
-          <input name="countries" list="countries" value="Выберите страну">
+
+
+          <input class="countries" type="text" name="countries" list="countries" value="Босния и Герцеговина">
+          <button class="countries__down">
+            <svg width="12" height="7" class="countries__button" x="0px" y="0px" viewBox="0 0 17 9">
+              <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z"/>
+            </svg>
+          </button>
+
+
+
+
+
+
+          <input class="countries" type="text" name="countries" list="countries" value="Чехия">
+          <button class="countries__down"></button>
+
+
+
+
+          <input class="countries" type="text" name="countries" list="countries" value="Выберите страну">
           <button class="down"></button>
           <div class="circle circle--no-countri"></div>
           <div class="close"></div>
-          <!--Вставить стрелку фоном и спозиционировать-->
-          <input name="countries" list="countries" value="Добавить страну">
+          <input class="countries" type="text" name="countries" list="countries" value="Добавить страну">
           <button class=""></button>
           <div class="circle circle--no-countri"></div>
           <button class="step-two-plus"></button>
