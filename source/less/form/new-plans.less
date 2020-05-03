@@ -1,10 +1,12 @@
 .new-plans {
-  min-height: 2481px;
+  position: relative;
+  min-height: 2410px;
   background-color: #d4d9eb;
   border: 1px solid #d4d9eb;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   margin-top: -25px;
+  z-index: 42;
 
   @media (min-width: @tablet-width) {
     min-height: 2800px;
@@ -89,6 +91,15 @@
       margin-bottom: 30px;
     }
   }
+}
+
+.step--two {
+  min-height: 550px;
+}
+
+.step--three {
+  position: relative;
+  min-height: 845px;
 }
 
 .step__text-p {
@@ -358,6 +369,7 @@
   width: 230px;
   height: 40px;
   margin-left: 20px;
+  margin-bottom: 20px;
   border-radius: 25px;
   border: transparent;
   background-color: #ffd74b;
@@ -366,10 +378,12 @@
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .countries {
-  width: 150px;
+  position: relative;
+  width: 168px;
   height: 40px;
   border: 1px solid #cbced9;
   margin-left: 25px;
@@ -383,14 +397,205 @@
   font-weight: 500;
   color: #1d2e5b;
   text-transform: uppercase;
+  z-index: 8;
+
+  &__second {
+    width: 220px;
+
+    &--grey {
+      background-color: #edeff6;
+      border: 1px solid #edeff6;
+    }
+  }
+
+  &--step-three {
+    border: none;
+    text-transform: none;
+  }
 }
 
 .countries__down {
+  position: relative;
   border: transparent;
   background-color: #ffffff;
   margin-left: -35px;
+  cursor: pointer;
+  z-index: 8;
 }
 
 .countries__button {
   fill: #c6c5c5;
+}
+
+.countries-window {
+  width: 51px;
+  height: 38px;
+  border: 1px solid #cbced9;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: 25px;
+  margin-top: -60px;
+  margin-bottom: 20px;
+
+  &--step-three {
+    border: none;
+    margin-bottom: 5px;
+  }
+}
+
+.countries-flag {
+  width: 56px;
+  height: 45px;
+  margin-left: 2px;
+  margin-top: 6px;
+}
+
+.countries-circle {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: 74px;
+  margin-top: 7px;
+  margin-bottom: 54px;
+  z-index: 10;
+
+  &--blue {
+    background-color: #1d2e5b;
+  }
+
+  &--grey {
+    background-color: #ffffff;
+    border: 1px solid #cdd0db;
+  }
+
+  &--background {
+    background-color: #edeff6;
+    margin-top: -44px;
+  }
+}
+
+.step-two-plus {
+  border: transparent;
+  background-color: #edeff6;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: 35px;
+  margin-top: -68px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.step-two-svg {
+  fill: #c2c4c9;
+}
+
+.countries-close {
+  display: block;
+  position: relative;
+  width: 21px;
+  height: 21px;
+  border-radius: 50px;
+  background-color: #edeff6;
+  border: transparent;
+  margin-left: auto;
+  margin-right: 15px;
+  margin-top: -72px;
+  cursor: pointer;
+  z-index: 10;
+
+  &__svg {
+    fill: #abacb2;
+    padding-bottom: 1px;
+  }
+}
+
+.step-back {
+  margin-left: 80px;
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #161c35;
+  text-transform: uppercase;
+}
+
+.step-textarea {
+  position: absolute;
+  top: 225px;
+  margin-left: 25px;
+  border-radius: 3px;
+  color: #c7c7c7;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.step-textarea-second {
+  margin-left: 25px;
+  padding-left: 25px;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.circle-step {
+  width: 6px;
+  height: 6px;
+  border-radius: 50px;
+  background-color: #161c35;
+  margin-left: 19px;
+
+  &--up {
+    margin-top: -25px;
+  }
+
+  &--down {
+    margin-top: -4px;
+    margin-bottom: -23px;
+  }
+}
+
+.horizontal-line-up {
+  width: 15px;
+  height: 2px;
+  background-color: #161c35;
+  margin-top: -4px;
+  margin-left: 10px;
+}
+
+.vertical-line-step {
+  width: 2px;
+  height: 281px;
+  background-color: #161c35;
+  margin-left: 10px;
+}
+
+.horizontal-line-down {
+  width: 15px;
+  height: 2px;
+  background-color: #161c35;
+  margin-top: -2px;
+  margin-left: 10px;
+}
+
+.button-step {
+  width: 230px;
+  height: 40px;
+  background-color: #ffd74b;
+  color: #161c35;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-top: 22px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border: transparent;
+  border-radius: 25px;
 }

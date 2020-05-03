@@ -251,60 +251,130 @@
           </table>
           <button class="next-step">следующий шаг</button>
         </div>
-        <div class="step">
+        <div class="step step--two">
           <h2 class="step__text-p">Шаг 2.</h2>
           <p class="step__text-p">Маршрут</p>
           <p class="step__text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько
           </p>
-
-
           <input class="countries" type="text" name="countries" list="countries" value="Босния и Герцеговина">
           <button class="countries__down">
             <svg width="12" height="7" class="countries__button" x="0px" y="0px" viewBox="0 0 17 9">
               <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z"/>
             </svg>
           </button>
-
-
-
-
-
-
+          <div class="countries-window">
+            <svg class="countries-flag" viewbox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+              <g fill-rule="nonzero" fill="none">
+                <rect fill="#4758A9" x=".9" y=".13" width="70" height="47" rx="6.36" />
+                <path fill="#F6D660" d="M13.9.13h37v47z" />
+                <path
+                  d="M8.19 4.88c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.8c.203.22.517.3.8.2l1.08-.43c.26-.11.36 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.11-1a.84.84 0 0 0-.55-.65l-1-.3zM12.51 10.38c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.8c.203.22.517.3.8.2l1.08-.43c.26-.1.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.3zM16.84 15.88c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.16.23-.33.19-.36-.09l-.11-1a.84.84 0 0 0-.55-.65l-1-.31zM21.17 21.38c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.1.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.83.83 0 0 0-.55-.65l-.99-.31zM25.5 26.88c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.83.83 0 0 0-.55-.65l-.99-.31zM29.83 32.38c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.31zM34.16 37.89c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.34.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.31zM37.87 42.6c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .21.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.09.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.16.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-1-.31z"
+                  fill="#FFF" />
+              </g>
+            </svg>
+          </div>
+          <button class="countries-close">
+            <svg class="countries-close__svg" width="9" height="9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18">
+              <path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3L10.3,9z"/>
+            </svg>
+          </button>
+          <div class="countries-circle countries-circle--blue"></div>
           <input class="countries" type="text" name="countries" list="countries" value="Чехия">
-          <button class="countries__down"></button>
-
-
-
-
-          <input class="countries" type="text" name="countries" list="countries" value="Выберите страну">
-          <button class="down"></button>
-          <div class="circle circle--no-countri"></div>
-          <div class="close"></div>
-          <input class="countries" type="text" name="countries" list="countries" value="Добавить страну">
-          <button class=""></button>
-          <div class="circle circle--no-countri"></div>
-          <button class="step-two-plus"></button>
+          <button class="countries__down">
+            <svg width="12" height="7" class="countries__button" x="0px" y="0px" viewBox="0 0 17 9">
+              <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z"/>
+            </svg>
+          </button>
+          <div class="countries-window">
+            <svg class="countries-flag" viewbox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+              <g fill-rule="nonzero" fill="none">
+                <path d="M63.92.55H6.65A6.36 6.36 0 0 0 .29 6.91v17.64h70V6.91A6.36 6.36 0 0 0 63.92.55z" fill="#FFF" />
+                <path d="M.28 41.18a6.36 6.36 0 0 0 6.36 6.36h57.28a6.36 6.36 0 0 0 6.36-6.36V24.55h-70v16.63z" fill="#ED5565" />
+                <path d="M2.19 2.38a6.34 6.34 0 0 0-1.9 4.54v34.27a6.34 6.34 0 0 0 1.95 4.57l23.05-21.21L2.19 2.38z"
+                  fill="#4758A9" />
+              </g>
+            </svg>
+          </div>
+          <button class="countries-close">
+            <svg class="countries-close__svg" width="9" height="9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18">
+              <path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3L10.3,9z"/>
+            </svg>
+          </button>
+          <div class="countries-circle countries-circle--blue"></div>
+          <input class="countries countries__second" type="text" name="countries" list="countries" value="Выберите страну">
+          <button class="countries__down">
+            <svg width="12" height="7" class="countries__button" x="0px" y="0px" viewBox="0 0 17 9">
+              <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z"/>
+            </svg>
+          </button>
+          <button class="countries-close">
+            <svg class="countries-close__svg" width="9" height="9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18">
+              <path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3L10.3,9z"/>
+            </svg>
+          </button>
+          <div class="countries-circle countries-circle--grey"></div>
+          <input class="countries countries__second countries__second--grey" type="text" name="countries" list="countries" value="Добавить страну">
+          <div class="countries-circle countries-circle--grey countries-circle--background"></div>
+          <button class="step-two-plus">
+            <svg class="step-two-svg" width="14" height="14" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14">
+              <polygon class="st0" points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 "/>
+            </svg>
+          </button>
           <button class="next-step">следующий шаг</button>
-          <a href="#">На шаг назад</a>
+          <a class="step-back" href="#">На шаг назад</a>
         </div>
-        <div class="step">
+        <div class="step step--three">
           <h2 class="step__text-p">Шаг 3.</h2>
           <p class="step__text-p">Развлечения</p>
           <p class="step__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-          <div class="vertical-line"></div>
+
+
+
+
+          <input class="countries countries--step-three" type="text" name="countries" list="countries" value="Босния и Герцеговина">
+          <div class="countries-window countries-window--step-three">
+            <svg class="countries-flag" viewbox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+              <g fill-rule="nonzero" fill="none">
+                <rect fill="#4758A9" x=".9" y=".13" width="70" height="47" rx="6.36" />
+                <path fill="#F6D660" d="M13.9.13h37v47z" />
+                <path
+                  d="M8.19 4.88c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.8c.203.22.517.3.8.2l1.08-.43c.26-.11.36 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.11-1a.84.84 0 0 0-.55-.65l-1-.3zM12.51 10.38c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.8c.203.22.517.3.8.2l1.08-.43c.26-.1.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.3zM16.84 15.88c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.16.23-.33.19-.36-.09l-.11-1a.84.84 0 0 0-.55-.65l-1-.31zM21.17 21.38c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.1.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.83.83 0 0 0-.55-.65l-.99-.31zM25.5 26.88c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.83.83 0 0 0-.55-.65l-.99-.31zM29.83 32.38c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.31zM34.16 37.89c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.34.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.31zM37.87 42.6c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .21.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.09.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.16.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-1-.31z"
+                  fill="#FFF" />
+              </g>
+            </svg>
+          </div>
+
+
+
+
+
+
+
+
+
+          <div class="circle-step circle-step--up"></div>
           <div class="horizontal-line-up"></div>
+          <div class="vertical-line-step"></div>
           <div class="horizontal-line-down"></div>
-          <div class="circle--up"></div>
-          <div class="circle--down"></div>
-          <input type="text" value="Босния и Герцеговина">
-          <!--Вставить флаг фоном-->
-          <textarea name="" cols="35" rows="12"> </textarea>
-          <input type="text" value="Чехия">
-          <!--Вставить флаг фоном-->
-          <textarea name="" cols="35"
-            rows="12">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-          <button type="button" class="Submit">Отправить</button>
-          <a href="#">На шаг назад</a>
+          <div class="circle-step circle-step--down"></div>
+          <textarea class="step-textarea" name="" cols="30" rows="10">План действий</textarea>
+          <input class="countries countries--step-three" type="text" name="countries" list="countries" value="Чехия">
+          <div class="countries-window countries-window--step-three">
+            <svg class="countries-flag" viewbox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+              <g fill-rule="nonzero" fill="none">
+                <path d="M63.92.55H6.65A6.36 6.36 0 0 0 .29 6.91v17.64h70V6.91A6.36 6.36 0 0 0 63.92.55z" fill="#FFF" />
+                <path d="M.28 41.18a6.36 6.36 0 0 0 6.36 6.36h57.28a6.36 6.36 0 0 0 6.36-6.36V24.55h-70v16.63z" fill="#ED5565" />
+                <path d="M2.19 2.38a6.34 6.34 0 0 0-1.9 4.54v34.27a6.34 6.34 0 0 0 1.95 4.57l23.05-21.21L2.19 2.38z"
+                  fill="#4758A9" />
+              </g>
+            </svg>
+          </div>
+
+
+
+          <textarea class="step-textarea-second" name="" cols="27" rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+          <button type="button" class="button-step">Отправить</button>
+          <a class="step-back" href="#">На шаг назад</a>
         </div>
       </section>
     </main>
