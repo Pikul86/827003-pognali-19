@@ -12,17 +12,17 @@
     min-height: 2800px;
     background-color: #d4d9eb;
     border: 1px solid #d4d9eb;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    margin-top: -10px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: -25px;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 3571px;
     background-color: #d4d9eb;
     border: 1px solid #d4d9eb;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     margin-top: -10px;
   }
 }
@@ -46,11 +46,26 @@
 }
 
 .new-plans__dots {
-  display: block;
-  margin-left: auto;
-  margin-right: 43px;
-  margin-top: -34px;
-  margin-bottom: 40px;
+  display: flex;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50px;
+  background-color: #bbbfcc;
+  margin-right: 5px;
+
+  &--active {
+    background-color: #1d2e5b;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-right: 15px;
+  }
 }
 
 .step {
@@ -114,10 +129,7 @@
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    font-weight: bold;
-    color: #1d2e5b;
-    margin: 0;
-    margin-left: 25px;
+    margin-left: 45px;
   }
 }
 
@@ -132,10 +144,26 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 24px;
-    font-weight: 400;
-    color: #444444;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 45px;
+    margin-right: 72px;
+  }
+}
+
+.new-plans__container {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #d6d9e6;
+    padding-top: 20px;
+    margin-left: 45px;
+    margin-right: 45px;
+
+
+    &--second {
+      border-bottom: 1px solid #d6d9e6;
+      margin-top: 60px;
+    }
   }
 }
 
@@ -155,6 +183,18 @@
     line-height: 16px;
     font-weight: 500;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    font-size: 20px;
+    line-height: 18px;
+
+    &::after {
+      margin-left: 305px;
+      font-size: 20px;
+      line-height: 18px;
+    }
+  }
 }
 
 .step-one__label--two {
@@ -173,6 +213,18 @@
     line-height: 16px;
     font-weight: 500;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    font-size: 20px;
+    line-height: 18px;
+
+    &::after {
+      font-size: 20px;
+      line-height: 18px;
+      margin-left: 335px;
+    }
+  }
 }
 
 .step-one__input {
@@ -188,6 +240,13 @@
   text-align: center;
   border-radius: 5px;
   border: 1px solid #cbced9;
+
+  @media (min-width: @tablet-width) {
+    width: 530px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 0;
+  }
 }
 
 .minus {
@@ -206,19 +265,34 @@
     position: absolute;
     width: 14px;
     border: 1px solid #cfcfcf;
+    background-color: #cfcfcf;
     transform: rotate(0deg);
   }
 
   &__one {
     position: absolute;
-    top: 230px;
+    top: 228px;
     left: 26px;
   }
 
   &__two {
     position: absolute;
-    top: 316px;
+    top: 314px;
     left: 26px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &__one {
+      position: absolute;
+      top: 70px;
+      left: 8px;
+    }
+
+    &__two {
+      position: absolute;
+      top: 70px;
+      left: 15px;
+    }
   }
 }
 
@@ -238,6 +312,7 @@
     position: absolute;
     width: 14px;
     border: 1px solid #cfcfcf;
+    background-color: #cfcfcf;
     transform: rotate(0deg);
   }
 
@@ -248,24 +323,49 @@
     position: absolute;
     width: 14px;
     border: 1px solid #cfcfcf;
+    background-color: #cfcfcf;
     transform: rotate(90deg);
   }
 
   &__one {
     position: absolute;
-    top: 230px;
+    top: 228px;
     left: 204px;
   }
 
   &__two {
     position: absolute;
-    top: 316px;
+    top: 314px;
     left: 204px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &__one {
+      position: absolute;
+      top: 70px;
+      left: 475px;
+    }
+
+    &__two {
+      position: absolute;
+      top: 70px;
+      left: 475px;
+    }
   }
 }
 
 .kids__label {
   margin-left: 65px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 340px;
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #1d2e5b;
+    text-transform: uppercase;
+  }
 }
 
 .kids + label::before {
@@ -278,6 +378,11 @@
   border: 1px solid #cbced9;
   border-radius: 5px;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+    left: -35px;
+  }
 }
 
 .kids:checked + label::before {
@@ -302,6 +407,14 @@
   line-height: 20px;
   font-weight: bold;
   color: #1d2e5b;
+
+  @media (min-width: @tablet-width) {
+    width: 534px;
+    height: 86px;
+    margin-left: 45px;
+    font-size: 36px;
+    line-height: auto;
+  }
 }
 
 .triangle {
@@ -323,6 +436,22 @@
   &__svg {
     fill: #bbbfcc;
   }
+
+  @media (min-width: @tablet-width) {
+    &--left {
+      margin-left: -530px;
+      margin-top: 50px;
+    }
+
+    &--right {
+      margin-top: 50px;
+    }
+
+    &__svg {
+      width: 19px;
+      height: 34px;
+    }
+  }
 }
 
 .calendar {
@@ -332,6 +461,12 @@
   text-align: center;
   border-spacing: 0;
   border-collapse: collapse;
+
+  &__th {
+    &--holiday {
+      color: #ff5c23;
+    }
+  }
 
   &__td {
     border: 1px solid #cbced9;
@@ -360,13 +495,38 @@
       color: #444444;
     }
   }
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    margin-left: 45px;
+
+    &__td {
+      width: 73px;
+      height: 73px;
+    }
+  }
 }
 
-.holiday {
-  color: #ff5c23;
+.week {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.week-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: contents;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #444444;
+  }
 }
 
 .next-step {
+  position: relative;
   width: 230px;
   height: 40px;
   margin-left: 20px;
@@ -380,6 +540,23 @@
   line-height: 30px;
   font-weight: bold;
   cursor: pointer;
+
+  &__svg {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 285px;
+    height: 81px;
+    margin-left: 45px;
+
+    &__svg {
+      position: absolute;
+      display: block;
+      right: 30px;
+      top: 35px;
+    }
+  }
 }
 
 .countries {

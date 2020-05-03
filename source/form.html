@@ -87,7 +87,7 @@
         </div>
         <button class="companion-form__change">Сменить фото</button>
         <fieldset class="companion-form__tags">
-          <legend class="companion-form__legend">Тэги</legend>
+          <legend class="companion-form__legend companion-form__legend--tags">Тэги</legend>
           <textarea class="companion-form__textarea">#бургер #бар #футбол #концерт #крафт</textarea>
         </fieldset>
         <fieldset class="companion-form__transport">
@@ -152,24 +152,27 @@
 
       <section class="new-plans">
         <h2 class="new-plans__title">Добавить план:</h2>
-        <svg class="new-plans__dots" width="47" height="6" x="0px" y="0px" viewBox="0 0 27 5">
-          <circle class="new-plans__dots new-plans__dots--one" fill="#1d2e5b" cx="2.5" cy="2.5" r="2.5" />
-          <circle class="st0" cx="13.5" cy="2.5" r="2.5" fill="#bbbfcc"/>
-          <circle class="st0" cx="24.5" cy="2.5" r="2.5" fill="#bbbfcc"/>
-        </svg>
+        <div class="new-plans__dots">
+          <div class="dot dot--active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
         <div class="step">
           <h2 class="step__text-p">Шаг 1.</h2>
           <p class="step__text-p">Даты пребывания</p>
           <p class="step__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-          <label class="step-one__label">Ищу попутчиков:</label>
-          <input class="step-one__input" type="text" value="2">
-          <button class="minus minus__one" type="button"></button>
-          <button class="plus plus__one" type="button"></button>
-          <label class="step-one__label--two">длительность:</label>
-          <input class="step-one__input" type="text" value="2">
-          <button class="minus minus__two" type="button"></button>
-          <button class="plus plus__two" type="button"></button>
-
+          <div class="new-plans__container">
+            <label class="step-one__label">Ищу попутчиков:</label>
+            <input class="step-one__input" type="text" value="2">
+            <button class="minus minus__one" type="button"></button>
+            <button class="plus plus__one" type="button"></button>
+          </div>
+          <div class="new-plans__container new-plans__container--second">
+            <label class="step-one__label--two">длительность:</label>
+            <input class="step-one__input" type="text" value="2">
+            <button class="minus minus__two" type="button"></button>
+            <button class="plus plus__two" type="button"></button>
+          </div>
 
           <input type="checkbox" class="visually-hidden kids" name="kids" id="kids-field" checked>
           <label class="kids__label" for="kids-field">Можно с детьми</label>
@@ -185,14 +188,23 @@
             </svg>
           </button>
           <table class="calendar">
-            <tr>
+            <tr class="week">
               <th>П</th>
               <th>В</th>
               <th>С</th>
               <th>Ч</th>
               <th>П</th>
-              <th class="holiday">С</th>
-              <th class="holiday">В</th>
+              <th class="calendar__th calendar__th--holiday">С</th>
+              <th class="calendar__th calendar__th--holiday">В</th>
+            </tr>
+            <tr class="week-tablet">
+              <th>Пн</th>
+              <th>Вт</th>
+              <th>Ср</th>
+              <th>Чт</th>
+              <th>Пт</th>
+              <th class="calendar__th calendar__th--holiday">Сб</th>
+              <th class="calendar__th calendar__th--holiday">Вс</th>
             </tr>
             <tr>
               <td class="calendar__td">23</td>
@@ -249,7 +261,11 @@
               <td class="calendar__td calendar__td--grey">5</td>
             </tr>
           </table>
-          <button class="next-step">следующий шаг</button>
+          <button class="next-step">следующий шаг
+            <svg class="next-step__svg" width="10" height="14" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 14">
+              <polygon points="0,14 0,0.1 10,7.1 "/>
+            </svg>
+          </button>
         </div>
         <div class="step step--two">
           <h2 class="step__text-p">Шаг 2.</h2>
