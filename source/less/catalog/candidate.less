@@ -36,20 +36,12 @@
   border-radius: 50px;
   margin-left: 17px;
 
-  &--firsova {
-    background: url("../../img/firsova-mobile@1x.jpg") no-repeat;
-  }
+  .avatar-mobile1x();
 
-  &--demin {
-    background: url("../../img/demin-mobile@1x.jpg") no-repeat;
-  }
-
-  &--rogovaya {
-    background: url("../../img/rogovaya-mobile@1x.jpg") no-repeat;
-  }
-
-  &--smolov {
-    background: url("../../img/smolov-mobile@1x.jpg") no-repeat;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .avatar-mobile2x();
+    background-size: 83px;
+    background-position: -9px;
   }
 
   @media (min-width: @tablet-width) {
@@ -58,20 +50,11 @@
     border-radius: 15px;
     margin-left: 36px;
 
-    &--firsova {
-      background: url("../../img/firsova-tablet@1x.jpg") no-repeat;
-    }
+    .avatar-tablet1x();
 
-    &--demin {
-      background: url("../../img/demin-tablet@1x.jpg") no-repeat;
-    }
-
-    &--rogovaya {
-      background: url("../../img/rogovaya-tablet@1x.jpg") no-repeat;
-    }
-
-    &--smolov {
-      background: url("../../img/smolov-tablet@1x.jpg") no-repeat;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      .avatar-tablet2x();
+      background-size: 190px;
     }
   }
 
@@ -83,20 +66,11 @@
     border-bottom-left-radius: 15px;
     margin-left: -5px;
 
-    &--firsova {
-      background: url("../../img/firsova-desktop@1x.jpg") no-repeat;
-    }
+    .avatar-desktop1x();
 
-    &--demin {
-      background: url("../../img/demin-desktop@1x.jpg") no-repeat;
-    }
-
-    &--rogovaya {
-      background: url("../../img/rogovaya-desktop@1x.jpg") no-repeat;
-    }
-
-    &--smolov {
-      background: url("../../img/smolov-desktop@1x.jpg") no-repeat;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      .avatar-desktop2x();
+      background-size: 290px;
     }
   }
 }
@@ -371,6 +345,8 @@
   position: absolute;
   top: 0;
   left: -39px;
+  width: 37px;
+  height: 37px;
 }
 
 .candidate-transport {

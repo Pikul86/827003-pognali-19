@@ -10,8 +10,15 @@
 
 <body>
     <header class="page-header">
+      <a class="header-logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+          <img class="header-logo__picture" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="Погнали">
+        </picture>
+      </a>
       <div class="top-contacts">
-        <ul class="top-contacts__list">
+        <ul class="top-contacts__list top-contacts__list--form">
           <li class="top-contacts__item top-contacts__item--phone">
             <svg width="18" height="18">
               <g>
@@ -80,7 +87,7 @@
         </div>
         <button class="companion-form__change">Сменить фото</button>
         <fieldset class="companion-form__tags">
-          <legend class="companion-form__legend">Тэги</legend>
+          <legend class="companion-form__legend companion-form__legend--tags">Тэги</legend>
           <textarea class="companion-form__textarea">#бургер #бар #футбол #концерт #крафт</textarea>
         </fieldset>
         <fieldset class="companion-form__transport">
@@ -145,143 +152,304 @@
 
       <section class="new-plans">
         <h2 class="new-plans__title">Добавить план:</h2>
+        <div class="new-plans__dots">
+          <div class="dot dot--active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
         <div class="step">
           <h2 class="step__text-p">Шаг 1.</h2>
           <p class="step__text-p">Даты пребывания</p>
           <p class="step__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-          <label class="step-one__label">Ищу попутчиков:</label>
-          <input class="step-one__input" type="text" value="2">
-          <button class="minus minus__one" type="button"></button>
-          <button class="plus plus__one" type="button"></button>
-          <label class="step-one__label--two">длительность:</label>
-          <input class="step-one__input" type="text" value="2">
-          <button class="minus minus__two" type="button"></button>
-          <button class="plus plus__two" type="button"></button>
-
+          <div class="new-plans__container">
+            <label class="step-one__label">Ищу попутчиков:</label>
+            <input class="step-one__input" type="text" value="2">
+            <button class="minus minus__one" type="button"></button>
+            <button class="plus plus__one" type="button"></button>
+          </div>
+          <div class="new-plans__container new-plans__container--second">
+            <label class="step-one__label--two">длительность:</label>
+            <input class="step-one__input" type="text" value="2">
+            <button class="minus minus__two" type="button"></button>
+            <button class="plus plus__two" type="button"></button>
+          </div>
 
           <input type="checkbox" class="visually-hidden kids" name="kids" id="kids-field" checked>
           <label class="kids__label" for="kids-field">Можно с детьми</label>
           <input class="month" type="text" value="Март 2019">
-          <button class="back"></button>
-          <button class="next"></button>
+          <button class="triangle triangle--left">
+            <svg class="triangle__svg" width="9" height="18" x="0px" y="0px" viewBox="0 0 18 34">
+              <path d="M3.6,17l14-14.4c0.6-0.6,0.6-1.6,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L0.4,15.9c-0.6,0.6-0.6,1.6,0,2.1l15.1,15.5c0.3,0.3,0.7,0.4,1,0.4s0.8-0.1,1-0.4c0.6-0.6,0.6-1.6,0-2.1L3.6,17z"/>
+            </svg>
+          </button>
+          <button class="triangle triangle--right">
+            <svg width="9" height="18" class="triangle__svg" x="0px" y="0px" viewBox="0 0 18 34">
+              <path d="M14.4,17L0.4,2.6C-0.1,2-0.1,1,0.4,0.4c0.6-0.6,1.5-0.6,2.1,0l15.1,15.5c0.6,0.6,0.6,1.6,0,2.1L2.5,33.6c-0.3,0.3-0.7,0.4-1,0.4s-0.8-0.1-1-0.4c-0.6-0.6-0.6-1.6,0-2.1L14.4,17z"/>
+            </svg>
+          </button>
           <table class="calendar">
-            <tr>
+            <tr class="week">
               <th>П</th>
               <th>В</th>
               <th>С</th>
               <th>Ч</th>
               <th>П</th>
-              <th class="holiday">С</th>
-              <th class="holiday">В</th>
+              <th class="calendar__th calendar__th--holiday">С</th>
+              <th class="calendar__th calendar__th--holiday">В</th>
+            </tr>
+            <tr class="week-tablet">
+              <th>Пн</th>
+              <th>Вт</th>
+              <th>Ср</th>
+              <th>Чт</th>
+              <th>Пт</th>
+              <th class="calendar__th calendar__th--holiday">Сб</th>
+              <th class="calendar__th calendar__th--holiday">Вс</th>
             </tr>
             <tr>
-              <td>23</td>
-              <td>24</td>
-              <td>25</td>
-              <td>26</td>
-              <td>27</td>
-              <td>28</td>
-              <td>1</td>
+              <td class="calendar__td">23</td>
+              <td class="calendar__td">24</td>
+              <td class="calendar__td">25</td>
+              <td class="calendar__td">26</td>
+              <td class="calendar__td">27</td>
+              <td class="calendar__td">28</td>
+              <td class="calendar__td">1</td>
             </tr>
             <tr>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
-              <td>5</td>
-              <td>6</td>
-              <td>7</td>
-              <td>8</td>
+              <td class="calendar__td">2</td>
+              <td class="calendar__td">3</td>
+              <td class="calendar__td">4</td>
+              <td class="calendar__td">5</td>
+              <td class="calendar__td">6</td>
+              <td class="calendar__td">7</td>
+              <td class="calendar__td">8</td>
             </tr>
             <tr>
-              <td>9</td>
-              <td>10</td>
-              <td>11</td>
-              <td>12</td>
-              <td>13</td>
-              <td>14</td>
-              <td>15</td>
+              <td class="calendar__td">9</td>
+              <td class="calendar__td">10</td>
+              <td class="calendar__td">11</td>
+              <td class="calendar__td">12</td>
+              <td class="calendar__td">13</td>
+              <td class="calendar__td">14</td>
+              <td class="calendar__td">15</td>
             </tr>
             <tr>
-              <td>16</td>
-              <td>17</td>
-              <td>18</td>
-              <td>19</td>
-              <td>20</td>
-              <td>21</td>
-              <td>22</td>
+              <td class="calendar__td">16</td>
+              <td class="calendar__td">17</td>
+              <td class="calendar__td">18</td>
+              <td class="calendar__td calendar__td-border--bottom">19</td>
+              <td class="calendar__td">20</td>
+              <td class="calendar__td">21</td>
+              <td class="calendar__td">22</td>
             </tr>
             <tr>
-              <td>23</td>
-              <td>24</td>
-              <td>25</td>
-              <td>26</td>
-              <td>27</td>
-              <td>28</td>
-              <td>29</td>
+              <td class="calendar__td">23</td>
+              <td class="calendar__td">24</td>
+              <td class="calendar__td calendar__td-border--right">25</td>
+              <td class="calendar__td calendar__td--active calendar__td-border">26</td>
+              <td class="calendar__td calendar__td--active">27</td>
+              <td class="calendar__td calendar__td--active">28</td>
+              <td class="calendar__td calendar__td--grey">29</td>
             </tr>
             <tr>
-              <td>30</td>
-              <td>31</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
-              <td>5</td>
+              <td class="calendar__td calendar__td--grey">30</td>
+              <td class="calendar__td calendar__td--grey">31</td>
+              <td class="calendar__td calendar__td--grey">1</td>
+              <td class="calendar__td calendar__td--grey">2</td>
+              <td class="calendar__td calendar__td--grey">3</td>
+              <td class="calendar__td calendar__td--grey">4</td>
+              <td class="calendar__td calendar__td--grey">5</td>
             </tr>
           </table>
-          <button class="next-step">следующий шаг</button>
+          <button class="next-step">следующий шаг
+            <svg class="next-step__svg" width="10" height="14" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 14">
+              <polygon points="0,14 0,0.1 10,7.1 "/>
+            </svg>
+          </button>
         </div>
-        <div class="step">
+        <div class="step step--two">
           <h2 class="step__text-p">Шаг 2.</h2>
           <p class="step__text-p">Маршрут</p>
-          <p class="step__text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько
-          </p>
-          <input name="countries" list="countries" value="Босния и Герцеговина">
-          <button class="down"></button>
-          <div class="circle circle--bosnia"></div>
-          <div class="flag-step--bosnia"></div>
-          <div class="close"></div>
-          <!--Вставить стрелку фоном и спозиционировать-->
-          <input name="countries" list="countries" value="Чехия">
-          <button class="down"></button>
-          <div class="circle circle--czech"></div>
-          <div class="flag-step--czech"></div>
-          <div class="close"></div>
-          <!--Вставить стрелку фоном и спозиционировать-->
-          <input name="countries" list="countries" value="Выберите страну">
-          <button class="down"></button>
-          <div class="circle circle--no-countri"></div>
-          <div class="close"></div>
-          <!--Вставить стрелку фоном и спозиционировать-->
-          <input name="countries" list="countries" value="Добавить страну">
-          <button class=""></button>
-          <div class="circle circle--no-countri"></div>
-          <button class="step-two-plus"></button>
+          <p class="step__text step__text--two">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько</p>
+          <div class="step__line"></div>
+          <input class="countries" type="text" name="countries" list="countries" value="Босния и Герцеговина">
+          <button class="countries__down">
+            <svg width="12" height="7" class="countries__button" x="0px" y="0px" viewBox="0 0 17 9">
+              <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z"/>
+            </svg>
+          </button>
+          <div class="countries-window">
+            <svg class="countries-flag" viewbox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+              <g fill-rule="nonzero" fill="none">
+                <rect fill="#4758A9" x=".9" y=".13" width="70" height="47" rx="6.36" />
+                <path fill="#F6D660" d="M13.9.13h37v47z" />
+                <path
+                  d="M8.19 4.88c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.8c.203.22.517.3.8.2l1.08-.43c.26-.11.36 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.11-1a.84.84 0 0 0-.55-.65l-1-.3zM12.51 10.38c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.8c.203.22.517.3.8.2l1.08-.43c.26-.1.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.3zM16.84 15.88c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.16.23-.33.19-.36-.09l-.11-1a.84.84 0 0 0-.55-.65l-1-.31zM21.17 21.38c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.1.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.83.83 0 0 0-.55-.65l-.99-.31zM25.5 26.88c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.83.83 0 0 0-.55-.65l-.99-.31zM29.83 32.38c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.31zM34.16 37.89c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.34.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.31zM37.87 42.6c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .21.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.09.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.16.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-1-.31z"
+                  fill="#FFF" />
+              </g>
+            </svg>
+          </div>
+          <button class="countries-close">
+            <svg class="countries-close__svg" width="9" height="9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18">
+              <path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3L10.3,9z"/>
+            </svg>
+          </button>
+          <div class="countries-circle countries-circle--blue"></div>
+          <input class="countries" type="text" name="countries" list="countries" value="Чехия">
+          <button class="countries__down">
+            <svg width="12" height="7" class="countries__button" x="0px" y="0px" viewBox="0 0 17 9">
+              <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z"/>
+            </svg>
+          </button>
+          <div class="countries-window">
+            <svg class="countries-flag" viewbox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+              <g fill-rule="nonzero" fill="none">
+                <path d="M63.92.55H6.65A6.36 6.36 0 0 0 .29 6.91v17.64h70V6.91A6.36 6.36 0 0 0 63.92.55z" fill="#FFF" />
+                <path d="M.28 41.18a6.36 6.36 0 0 0 6.36 6.36h57.28a6.36 6.36 0 0 0 6.36-6.36V24.55h-70v16.63z" fill="#ED5565" />
+                <path d="M2.19 2.38a6.34 6.34 0 0 0-1.9 4.54v34.27a6.34 6.34 0 0 0 1.95 4.57l23.05-21.21L2.19 2.38z"
+                  fill="#4758A9" />
+              </g>
+            </svg>
+          </div>
+          <button class="countries-close">
+            <svg class="countries-close__svg" width="9" height="9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18">
+              <path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3L10.3,9z"/>
+            </svg>
+          </button>
+          <div class="countries-circle countries-circle--blue"></div>
+          <input class="countries countries__second" type="text" name="countries" list="countries" value="Выберите страну">
+          <button class="countries__down countries__down--three">
+            <svg width="12" height="7" class="countries__button" x="0px" y="0px" viewBox="0 0 17 9">
+              <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z"/>
+            </svg>
+          </button>
+          <button class="countries-close countries-close--three">
+            <svg class="countries-close__svg" width="9" height="9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18">
+              <path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3L10.3,9z"/>
+            </svg>
+          </button>
+          <div class="countries-circle countries-circle--grey"></div>
+          <input class="countries countries__second countries__second--grey" type="text" name="countries" list="countries" value="Добавить страну">
+          <div class="countries-circle countries-circle--grey countries-circle--background"></div>
+          <button class="step-two-plus">
+            <svg class="step-two-svg" width="14" height="14" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14">
+              <polygon class="st0" points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 "/>
+            </svg>
+          </button>
           <button class="next-step">следующий шаг</button>
-          <a href="#">На шаг назад</a>
+          <a class="step-back" href="#">На шаг назад</a>
+          <div class="modal-countries">
+            <div class="countries-container">
+              <p class="countries-container__text">Выберите страну</p>
+              <button class="countries-container__button" type="button">
+                <svg class="countries-container__svg" width="9" height="9" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9 9">
+                  <path
+                    d="M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2L5.2,4.5z" />
+                </svg>
+              </button>
+            </div>
+            <div class="table-countries">
+              <table class="alphabet-countries">
+                <tr>
+                  <td class="alphabet-countries__td alphabet-countries__td--active">А</td>
+                  <td class="alphabet-countries__td">Б</td>
+                  <td class="alphabet-countries__td">В</td>
+                  <td class="alphabet-countries__td">Г</td>
+                  <td class="alphabet-countries__td">Д</td>
+                </tr>
+                <tr>
+                  <td class="alphabet-countries__td">Е</td>
+                  <td class="alphabet-countries__td">З</td>
+                  <td class="alphabet-countries__td">И</td>
+                  <td class="alphabet-countries__td">К</td>
+                  <td class="alphabet-countries__td">Л</td>
+                </tr>
+                <tr>
+                  <td class="alphabet-countries__td">М</td>
+                  <td class="alphabet-countries__td">Н</td>
+                  <td class="alphabet-countries__td">О</td>
+                  <td class="alphabet-countries__td">П</td>
+                  <td class="alphabet-countries__td">Р</td>
+                </tr>
+                <tr>
+                  <td class="alphabet-countries__td">С</td>
+                  <td class="alphabet-countries__td">Т</td>
+                  <td class="alphabet-countries__td">У</td>
+                  <td class="alphabet-countries__td">Ф</td>
+                  <td class="alphabet-countries__td">Х</td>
+                </tr>
+                <tr>
+                  <td class="alphabet-countries__td">Ч</td>
+                  <td class="alphabet-countries__td">Ш</td>
+                  <td class="alphabet-countries__td">Э</td>
+                  <td class="alphabet-countries__td">Ю</td>
+                  <td class="alphabet-countries__td">Я</td>
+                </tr>
+              </table>
+            </div>
+            <ul class="alphabet-countries__list">
+              <li class="alphabet-countries__item">Австралия</li>
+              <li class="alphabet-countries__item">Австрия</li>
+              <li class="alphabet-countries__item">Азербайджан</li>
+              <li class="alphabet-countries__item">Албания</li>
+              <li class="alphabet-countries__item">Алжир</li>
+              <li class="alphabet-countries__item">Ангола</li>
+              <li class="alphabet-countries__item">Андорра</li>
+              <li class="alphabet-countries__item">Антигуа и Барбуда</li>
+              <li class="alphabet-countries__item">Аргентина</li>
+              <li class="alphabet-countries__item">Армения</li>
+              <li class="alphabet-countries__item">Афганистан</li>
+            </ul>
+          </div>
         </div>
-        <div class="step">
+        <div class="step step--three">
           <h2 class="step__text-p">Шаг 3.</h2>
           <p class="step__text-p">Развлечения</p>
           <p class="step__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-          <div class="vertical-line"></div>
+          <input class="countries countries--step-three" type="text" name="countries" list="countries" value="Босния и Герцеговина">
+          <div class="countries-window countries-window--step-three">
+            <svg class="countries-flag" viewbox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+              <g fill-rule="nonzero" fill="none">
+                <rect fill="#4758A9" x=".9" y=".13" width="70" height="47" rx="6.36" />
+                <path fill="#F6D660" d="M13.9.13h37v47z" />
+                <path
+                  d="M8.19 4.88c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.8c.203.22.517.3.8.2l1.08-.43c.26-.11.36 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.11-1a.84.84 0 0 0-.55-.65l-1-.3zM12.51 10.38c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.8c.203.22.517.3.8.2l1.08-.43c.26-.1.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.3zM16.84 15.88c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.16.23-.33.19-.36-.09l-.11-1a.84.84 0 0 0-.55-.65l-1-.31zM21.17 21.38c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.1.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.83.83 0 0 0-.55-.65l-.99-.31zM25.5 26.88c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.83.83 0 0 0-.55-.65l-.99-.31zM29.83 32.38c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.31zM34.16 37.89c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.34.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.31zM37.87 42.6c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .21.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.09.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.16.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-1-.31z"
+                  fill="#FFF" />
+              </g>
+            </svg>
+          </div>
+          <div class="circle-step circle-step--up"></div>
           <div class="horizontal-line-up"></div>
+          <div class="vertical-line-step"></div>
           <div class="horizontal-line-down"></div>
-          <div class="circle--up"></div>
-          <div class="circle--down"></div>
-          <input type="text" value="Босния и Герцеговина">
-          <!--Вставить флаг фоном-->
-          <textarea name="" cols="35" rows="12"> </textarea>
-          <input type="text" value="Чехия">
-          <!--Вставить флаг фоном-->
-          <textarea name="" cols="35"
-            rows="12">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-          <button type="button" class="Submit">Отправить</button>
-          <a href="#">На шаг назад</a>
+          <div class="circle-step circle-step--down"></div>
+          <textarea class="step-textarea" name="" cols="29" rows="10">План действий</textarea>
+          <input class="countries countries--step-three" type="text" name="countries" list="countries" value="Чехия">
+          <div class="countries-window countries-window--step-three">
+            <svg class="countries-flag" viewbox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+              <g fill-rule="nonzero" fill="none">
+                <path d="M63.92.55H6.65A6.36 6.36 0 0 0 .29 6.91v17.64h70V6.91A6.36 6.36 0 0 0 63.92.55z" fill="#FFF" />
+                <path d="M.28 41.18a6.36 6.36 0 0 0 6.36 6.36h57.28a6.36 6.36 0 0 0 6.36-6.36V24.55h-70v16.63z" fill="#ED5565" />
+                <path d="M2.19 2.38a6.34 6.34 0 0 0-1.9 4.54v34.27a6.34 6.34 0 0 0 1.95 4.57l23.05-21.21L2.19 2.38z"
+                  fill="#4758A9" />
+              </g>
+            </svg>
+          </div>
+          <textarea class="step-textarea-second" name="" cols="27" rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+          <button type="button" class="button-step">Отправить</button>
+          <a class="step-back" href="#">На шаг назад</a>
         </div>
       </section>
     </main>
     <footer class="page-footer page-footer--form">
+      <a class="footer-logo footer-logo--catalog" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+          <img class="footer-logo__picture" src="img/logo-mobile-blue@1x.png@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="96" height="15" alt="Погнали">
+        </picture>
+      </a>
       <h2 class="visually-hidden">Футер</h2>
         <ul class="footer">
           <li class="footer__item">
@@ -322,7 +490,7 @@
           </svg>
         </a>
     </footer>
-    <script src="js/popup.js"></script>
+    <script src="js/form.js"></script>
 </body>
 
 </html>

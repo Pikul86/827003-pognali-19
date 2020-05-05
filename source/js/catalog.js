@@ -1,30 +1,30 @@
 var modal = document.querySelector(".modal-filter");
 var dots = document.querySelector(".dots");
 var close = document.querySelector(".catalog-close-top");
-var closebottom = document.querySelector(".close");
-var closebuttondown = document.querySelector(".best-companion__button--down");
-var checkbox = document.querySelector(".best-companion__checkbox");
-var btntransport = document.querySelector(".btn-transport__companion");
+var closetwo = document.querySelectorAll(".alphabet__close");
+var viewall = document.querySelector(".filter-country__text");
 
-modal.classList.add("modal-delete");
-close.classList.add("catalog-close");
+function changeCloseState(evt) {
+  evt.preventDefault();
+  close.classList.add("catalog-close");
+  modal.classList.add("modal-delete");
+  dots.classList.remove("dots-delete");
+  viewall.classList.remove("dots-delete");
+};
+
+dots.classList.add("dots-delete");
+viewall.classList.add("dots-delete");
+
+close.addEventListener("click", changeCloseState);
+
+Array.prototype.slice.call(closetwo,0).forEach(element => {
+  element.addEventListener("click", changeCloseState);
+});
 
 dots.addEventListener("click", function (evt) {
   evt.preventDefault();
   modal.classList.remove("modal-delete");
   dots.classList.add("dots-delete");
+  viewall.classList.add("dots-delete");
   close.classList.remove("catalog-close");
-});
-
-close.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  close.classList.add("catalog-close");
-  modal.classList.add("modal-delete");
-  dots.classList.remove("dots-delete");
-});
-
-closebottom.addEventListener("click", function (evt) {
-  close.classList.add("catalog-close");
-  modal.classList.add("modal-delete");
-  dots.classList.remove("dots-delete");
 });

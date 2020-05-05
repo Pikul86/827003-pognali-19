@@ -52,6 +52,11 @@
   background-size: 100%;
   margin-left: 35px;
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../../../img/demin-mobile@2x.jpg") no-repeat;
+    background-size: 101px;
+  }
+
   @media (min-width: @tablet-width) {
     width: 94px;
     height: 94px;
@@ -60,6 +65,11 @@
     background: url("../../../img/photo-account-tablet@1x.jpg") no-repeat;
     background-size: 100%;
     margin-left: 420px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../../../img/photo-account-tablet@2x.jpg") no-repeat;
+      background-size: 95px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -72,6 +82,11 @@
     background: url("../../../img/demin-tablet@1x.jpg") no-repeat;
     background-size: 100%;
     margin-left: 20px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../../../img/photo-account-tablet@2x.jpg") no-repeat;
+      background-size: 189px;
+    }
   }
 }
 
@@ -138,6 +153,14 @@
   padding-top: 10px;
   margin-bottom: 19px;
 
+  @media (min-width: @tablet-width) {
+    width: 617px;
+    height: 94px;
+    margin-left: 75px;
+    border: 1px solid #cbced9;
+    text-transform: uppercase;
+  }
+
   @media (min-width: @desktop-width) {
     box-sizing: border-box;
     width: 270px;
@@ -159,8 +182,16 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
+    width: 100px;
+    left: 2%;
     top: 90%;
+    text-align: center;
     background-color: #edeff6;
+
+    &--tags {
+      width: 65px;
+      left: 33%;
+    }
   }
 }
 
@@ -181,12 +212,14 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 25px;
+    top: 35px;
     left: 230px;
     width: 245px;
     min-height: 69px;
     margin-left: 25px;
     border-radius: 12px;
+    text-transform: uppercase;
+    border: 1px solid #cbced9;
   }
 
   @media (min-width: @desktop-width) {
