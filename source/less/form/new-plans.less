@@ -141,11 +141,37 @@
   margin-left: 25px;
   margin-right: 25px;
 
+  &--two {
+    border-bottom: none;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 24px;
     margin-left: 45px;
     margin-right: 72px;
+
+    &--two {
+      width: 535px;
+      height: 70px;
+      border-bottom: 1px solid #d6d9e6;
+      box-sizing: border-box;
+      padding-right: 120px;
+    }
+  }
+}
+
+.step__line {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 329px;
+    background-color: #d6d9e6;
+    margin-left: 460px;
+    margin-top: -20px;
   }
 }
 
@@ -590,6 +616,11 @@
     border: none;
     text-transform: none;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 368px;
+    margin-left: 43px;
+  }
 }
 
 .countries__down {
@@ -619,6 +650,11 @@
     border: none;
     margin-bottom: 5px;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-right: 60px;
+    border: none;
+  }
 }
 
 .countries-flag {
@@ -626,6 +662,46 @@
   height: 45px;
   margin-left: 2px;
   margin-top: 6px;
+
+  @media (min-width: @tablet-width) {
+    width: 66px;
+    height: 59px;
+  }
+}
+
+.countries-close {
+  display: block;
+  position: relative;
+  width: 21px;
+  height: 21px;
+  border-radius: 50px;
+  background-color: #edeff6;
+  border: transparent;
+  margin-left: auto;
+  margin-right: 15px;
+  margin-top: -72px;
+  cursor: pointer;
+  z-index: 10;
+
+  &__svg {
+    fill: #abacb2;
+    padding-bottom: 1px;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    margin-top: -50px;
+    margin-right: 21px;
+    width: 27px;
+    height: 27px;
+
+    &__svg {
+      width: 18px;
+      height: 18px;
+      padding-right: 4px;
+      padding-top: 3px;
+    }
+  }
 }
 
 .countries-circle {
@@ -652,6 +728,11 @@
     background-color: #edeff6;
     margin-top: -44px;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-right: 154px;
+    margin-top: -12px;
+  }
 }
 
 .step-two-plus {
@@ -669,26 +750,6 @@
 
 .step-two-svg {
   fill: #c2c4c9;
-}
-
-.countries-close {
-  display: block;
-  position: relative;
-  width: 21px;
-  height: 21px;
-  border-radius: 50px;
-  background-color: #edeff6;
-  border: transparent;
-  margin-left: auto;
-  margin-right: 15px;
-  margin-top: -72px;
-  cursor: pointer;
-  z-index: 10;
-
-  &__svg {
-    fill: #abacb2;
-    padding-bottom: 1px;
-  }
 }
 
 .step-back {
