@@ -87,3 +87,43 @@
     margin-left: 25px;
   }
 }
+
+.horizontal-line-headform {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 60px;
+    height: 2px;
+    position: relative;
+    left: 303px;
+    top: 15px;
+    background-color: #ffffff;
+  }
+}
+
+.menu-header-form {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    position: relative;
+    left: 370px;
+    top: -15px;
+    color: #ffffff;
+    height: 40px;
+
+    &__ul {
+      display: flex;
+      list-style: none;
+    }
+
+    &__li {
+      margin-right: 10px;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 500;
+    }
+  }
+}
