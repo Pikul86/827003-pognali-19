@@ -156,10 +156,18 @@
   font-weight: 500;
   text-transform: uppercase;
   margin-top: 28px;
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+
+  &:focus {
+    color: #dddfe6;
+  }
 
   @media (min-width: @desktop-width) {
     display: block;
     width: 150px;
+    height: 30px;
     margin-left: auto;
     font-size: 20px;
     line-height: 18px;

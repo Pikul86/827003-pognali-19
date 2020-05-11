@@ -112,18 +112,49 @@
     top: -15px;
     color: #ffffff;
     height: 40px;
-
-    &__ul {
-      display: flex;
-      list-style: none;
-    }
-
-    &__li {
-      margin-right: 10px;
-      text-transform: uppercase;
-      font-size: 20px;
-      line-height: 30px;
-      font-weight: 500;
-    }
+    text-decoration: none;
   }
 }
+
+.nav_a {
+  overflow: hidden;
+  padding: 0 4px;
+  height: 35px;
+}
+
+.nav_a {
+  position: relative;
+  display: inline-block;
+  margin: 15px 15px;
+  outline: none;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.cl-effect-5 a span {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s;
+  width: 105px;
+}
+
+.cl-effect-5 a span::before {
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
+  font-weight: 700;
+  transform: translate3d(0, 0, 0);
+  color: #ffd74b;
+}
+
+.cl-effect-5 a:hover span,
+.cl-effect-5 a:focus span {
+  transform: translateY(-100%);
+}
+

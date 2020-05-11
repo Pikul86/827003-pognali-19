@@ -394,6 +394,25 @@
   text-align: center;
   border-radius: 5px;
   border: 1px solid #cbced9;
+  outline-color: #161c35;
+
+  &:hover {
+    border-color: #959bb2;
+  }
+
+  &:hover + .minus::after,
+  &:hover ~ .plus::before,
+  &:hover ~ .plus::after {
+    border-color: #959bb2;
+    background-color: #959bb2;
+  }
+
+  &:focus + .minus::after,
+  &:focus ~ .plus::before,
+  &:focus ~ .plus::after {
+    border-color: #161c35;
+    background-color: #161c35;
+  }
 
   @media (min-width: @tablet-width) {
     width: 530px;
@@ -417,6 +436,7 @@
   border: transparent;
   background-color: #ffffff;
   cursor: pointer;
+
 
   &::after {
     content: "";
@@ -583,6 +603,10 @@
   background-size: 50%;
 }
 
+.kids:hover + label::before {
+  border-color: #959bb2;
+}
+
 .month {
   width: 220px;
   height: 44px;
@@ -633,6 +657,14 @@
 
   &__svg {
     fill: #bbbfcc;
+
+    &:hover {
+      fill: #918f8f;
+    }
+
+    &:focus {
+      fill: #e9e8e8;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -653,7 +685,11 @@
 
   @media (min-width: @desktop-width) {
     &--left {
-      margin-left: -76%;
+      margin-left: -75%;
+    }
+
+    &--right {
+      margin-left: -35px;
     }
   }
 }
@@ -816,6 +852,15 @@
     display: none;
   }
 
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:focus {
+    color: #cd9b3f;
+    fill: #cd9b3f;
+  }
+
   @media (min-width: @tablet-width) {
     width: 285px;
     height: 81px;
@@ -865,6 +910,10 @@
   &--step-three {
     border: none;
     text-transform: none;
+  }
+
+  &:hover {
+    border-color: #959bb2;
   }
 
   @media (min-width: @tablet-width) {
@@ -1206,7 +1255,7 @@
 
     &--down {
       margin-bottom: -40px;
-      margin-right: 26%
+      margin-right: 26%;
     }
   }
 }
@@ -1267,9 +1316,19 @@
   margin-left: 20px;
   border: transparent;
   border-radius: 25px;
+  cursor: pointer;
 
   &__svg {
     display: none;
+  }
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:focus {
+    color: #cd9b3f;
+    fill: #cd9b3f;
   }
 
   @media (min-width: @tablet-width) {
