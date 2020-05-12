@@ -278,6 +278,7 @@
 }
 
 .companion-form__list {
+  position: relative;
   display: flex;
   list-style: none;
   margin: 0;
@@ -304,10 +305,12 @@
 
 
   &--active {
+    display: inline-block;
     fill: #1d2e5b;
 
-    &:hover {
+    &:hover .tooltip {
       fill: #57617c;
+      display: inline-block;
     }
 
     &:focus {
@@ -317,13 +320,75 @@
   }
 
   &--off {
-    &:hover {
+    &:hover .tooltip {
       fill: #b2b2b2;
+      display: inline-block;
     }
 
     &:focus {
       fill: #cbced8;
       background-color: #e2e5f1;
     }
+  }
+}
+
+.tooltip {
+  position: absolute;
+  top: 50px;
+  height: 57px;
+  border-radius: 5px;
+  background-color: #101d41;
+  display: none;
+
+  &__text {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 6px;
+  }
+
+  &__plane {
+    left: -7px;
+    width: 147px;
+  }
+
+  &__bus {
+    width: 171px;
+    left: 18px;
+  }
+
+  &__bike {
+    width: 131px;
+    left: 65px;
+  }
+
+  &__run {
+    width: 109px;
+    right: 25px;
+  }
+}
+
+.triangle-transform {
+  width: 16px;
+  height: 16px;
+  margin-top: -6px;
+  background-color: #101d41;
+  transform: rotate(45deg);
+
+  &__plane {
+    margin-left: 65px;
+  }
+
+  &__bus {
+    margin-left: 75px;
+  }
+
+  &__bike {
+    margin-left: 58px;
+  }
+
+  &__run {
+    margin-left: 48px;
   }
 }

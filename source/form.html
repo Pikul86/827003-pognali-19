@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -82,6 +82,10 @@
                 <svg width="14" height="16">
                   <use xlink:href="img/sprite.svg#companion-btn-plane"></use>
                 </svg>
+                <span class="tooltip tooltip__plane">
+                  <div class="triangle-transform triangle-transform__plane"></div>
+                  <p class="tooltip__text">Авиаперелет</p>
+                </span>
               </button>
             </li>
             <li class="companion-form__item">
@@ -89,6 +93,10 @@
                 <svg width="13" height="16">
                   <use xlink:href="img/sprite.svg#companion-btn-bus"></use>
                 </svg>
+                <span class="tooltip tooltip__bus">
+                  <div class="triangle-transform triangle-transform__bus"></div>
+                  <p class="tooltip__text">Автотранспорт</p>
+                </span>
               </button>
             </li>
             <li class="companion-form__item">
@@ -96,6 +104,10 @@
                 <svg width="19" height="17">
                   <use xlink:href="img/sprite.svg#companion-btn-bike"></use>
                 </svg>
+                <span class="tooltip tooltip__bike">
+                  <div class="triangle-transform triangle-transform__bike"></div>
+                  <p class="tooltip__text">Велосипед</p>
+                </span>
               </button>
             </li>
             <li class="companion-form__item">
@@ -103,6 +115,10 @@
                 <svg width="15" height="17">
                   <use xlink:href="img/sprite.svg#companion-btn-run"></use>
                 </svg>
+                <span class="tooltip tooltip__run">
+                  <div class="triangle-transform triangle-transform__run"></div>
+                  <p class="tooltip__text">Пешком</p>
+                </span>
               </button>
             </li>
           </ul>
@@ -164,7 +180,7 @@
             <button class="plus plus__two" type="button"></button>
           </div>
 
-          <input type="checkbox" class="visually-hidden kids" name="kids" id="kids-field" checked>
+          <input type="checkbox" class="visually-hidden kids" name="kids" id="kids-field" checked="">
           <label class="kids__label" for="kids-field">Можно с детьми</label>
           <input class="month" type="text" value="Март 2019">
           <button class="triangle triangle--left">
@@ -221,8 +237,7 @@
               </td>
             </tr>
             <tr>
-              <td class="calendar__td"
-              <p class="number">2</p>
+              <td class="calendar__td" <p="">2<p></p>
             </td>
               <td class="calendar__td">
                 <p class="number">3</p>
@@ -646,7 +661,7 @@
             </a>
           </li>
         </ul>
-      </div>
+
       <div class="footer__copyright">
         <b class="footer__copyright footer__copyright--text">Разработано</b>
           <a class="footer__copyright footer__copyright--link" href="https://htmlacademy.ru/intensive/adaptive">
@@ -654,7 +669,7 @@
               <use xlink:href="img/sprite.svg#academy"></use>
             </svg>
         </a>
-    </footer>
+    </div></footer>
     <script src="js/form.js"></script>
 </body>
 
