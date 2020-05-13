@@ -8,6 +8,20 @@
   border-radius: 5px;
   background-color: #ffffff;
   z-index: 150;
+
+  @media (min-width: @tablet-width) {
+    min-height: 400px;
+    width: 577px;
+    top: 419px;
+    left: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 730px;
+    min-height: 565px;
+    top: 433px;
+    left: 136px;
+  }
 }
 
 .modal-delete {
@@ -49,12 +63,54 @@
   }
 
   &__svg {
-    fill: #ffffff;
+    fill: #616d8d;
+
+    &:hover {
+      fill: #ffffff;
+    }
+
+    &:focus {
+      fill: #34436c;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 392px;
+    margin-top: -42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 713px;
+    height: 55px;
+    margin-top: 0;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 15px;
+
+    &__svg {
+      width: 15px;
+      height: 15px;
+    }
+
+    &__button {
+      width: 27px;
+      height: 24px;
+    }
   }
 }
 
 .alphabet-countries {
   border-collapse: collapse;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-collapse: separate;
+    border-spacing: 15px;
+  }
 }
 
 .alphabet-countries__td {
@@ -63,9 +119,54 @@
   text-align: center;
   border: 1px solid #cbced9;
   color: #1d2e5b;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
 
   &--active {
     background-color: #edeff6;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 53px;
+    height: 70px;
+    font-size: 20px;
+
+    &--active {
+      background-color: #1d2e5b;
+      color: #ffffff;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    border-radius: 8px;
+    border: none;
+  }
+}
+
+.alphabet-countries__text {
+  border: transparent;
+  background: transparent;
+
+  @media (min-width: @desktop-width) {
+
+    width: 53px;
+    height: 70px;
+    background: transparent;
+    border: 1px solid #cbced9;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      border-color: #959bb2;
+    }
+
+    &:focus {
+      border: none;
+      background-color: #1d2e5b;
+      color: #ffffff;
+      outline: transparent;
+    }
   }
 }
 
@@ -82,4 +183,45 @@
   padding: 0;
   padding-left: 19px;
   padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 190px;
+    min-height: 373px;
+    margin-left: auto;
+    margin-top: -380px;
+    border-bottom: none;
+    border-right: none;
+    padding-top: 7px;
+    border-left: 0.5px solid #eaecf2;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -465px;
+  }
+}
+
+.alphabet-countries__item {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+
+  &--btn {
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+
+    &:hover {
+      color: #1d2e5b;
+    }
+
+    &:focus {
+      color: #bfc4d1;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
