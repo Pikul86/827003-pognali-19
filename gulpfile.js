@@ -71,7 +71,7 @@ gulp.task("server", function () {
     notify: false,
     open: true,
     cors: true,
-    ui: false, startPath: "/index.html"
+    ui: false, startPath: "/form.html"
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
